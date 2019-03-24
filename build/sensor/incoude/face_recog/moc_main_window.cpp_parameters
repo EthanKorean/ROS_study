@@ -1,0 +1,11 @@
+-I/home/roskinetic/dev/ros/src/sensor/$(CMAKE_BINARY_DIR)
+-I/home/roskinetic/dev/ros/src/sensor/include
+-I/home/roskinetic/dev/ros/src/sensor/$(catkin_INCLUDE_DIRS)
+-I/home/roskinetic/dev/ros/src/sensor
+-I/home/roskinetic/dev/ros/build/sensor
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="sensor"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/roskinetic/dev/ros/build/sensor/incoude/face_recog/moc_main_window.cpp
+/home/roskinetic/dev/ros/src/sensor/incoude/face_recog/main_window.h

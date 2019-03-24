@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file>images/laugh64.png</file>
+        <file>images/laugh128.png</file>
+        <file>images/laugh256.png</file>
+        <file>images/laugh512.png</file>
+        <file>images/smile64.png</file>
+        <file>images/smile128.png</file>
+        <file>images/smile256.png</file>
+        <file>images/smile512.png</file>
+    </qresource>
+</RCC>

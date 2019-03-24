@@ -1,0 +1,8 @@
+prefix=/home/roskinetic/dev/ros/install
+
+Name: ros_qml
+Description: Description of ros_qml
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/roskinetic/dev/ros/install/lib 
+Requires: 

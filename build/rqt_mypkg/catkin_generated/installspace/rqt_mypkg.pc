@@ -1,0 +1,8 @@
+prefix=/home/roskinetic/dev/ros/install
+
+Name: rqt_mypkg
+Description: Description of rqt_mypkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/roskinetic/dev/ros/install/lib 
+Requires: 

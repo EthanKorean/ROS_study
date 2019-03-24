@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file>Blush.qml</file>
+        <file>Eye.qml</file>
+        <file>Face.qml</file>
+        <file>Mouth.qml</file>
+        <file>GuideMenu.qml</file>
+        <file>GuideMenuBtn.qml</file>
+        <file>img/airgate.png</file>
+        <file>img/help_desk.png</file>
+        <file>img/toilet.png</file>
+    </qresource>
+</RCC>

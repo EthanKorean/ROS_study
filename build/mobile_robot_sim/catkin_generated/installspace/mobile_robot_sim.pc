@@ -1,0 +1,8 @@
+prefix=/home/roskinetic/dev/ros/install
+
+Name: mobile_robot_sim
+Description: Description of mobile_robot_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/roskinetic/dev/ros/install/lib 
+Requires: 

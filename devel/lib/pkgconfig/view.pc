@@ -1,0 +1,8 @@
+prefix=/home/roskinetic/dev/ros/devel
+
+Name: view
+Description: Description of view
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/roskinetic/dev/ros/devel/lib 
+Requires: 

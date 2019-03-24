@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -g -Wno-old-style-cast -Wno-missing-field-initializers -g  -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/roskinetic/dev/ros/build/gmock/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/roskinetic/dev/ros/build/gmock/gtest/src:/home/roskinetic/dev/ros/build/gmock/gtest 
