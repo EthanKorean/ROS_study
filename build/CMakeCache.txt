@@ -1028,6 +1028,12 @@ ros_qml_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/test5
 //Value Computed by CMake
 ros_qml_SOURCE_DIR:STATIC=/home/roskinetic/dev/ros/src/test5
 
+//Value Computed by CMake
+ros_qml_pack_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/ros_qml_pack
+
+//Value Computed by CMake
+ros_qml_pack_SOURCE_DIR:STATIC=/home/roskinetic/dev/ros/src/ros_qml_pack
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
 
@@ -1297,7 +1303,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

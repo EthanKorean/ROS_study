@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gmock)
 subdirs(monitor)
+subdirs(ros_qml_pack)
 subdirs(sensor)

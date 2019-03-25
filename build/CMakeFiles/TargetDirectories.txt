@@ -52,6 +52,17 @@
 /home/roskinetic/dev/ros/build/monitor/CMakeFiles/install/local.dir
 /home/roskinetic/dev/ros/build/monitor/CMakeFiles/install.dir
 /home/roskinetic/dev/ros/build/monitor/CMakeFiles/guide_automoc.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/list_install_components.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/install.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/rebuild_cache.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/edit_cache.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/test.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/navi_start_node.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/navi_node.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/install/local.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/install/strip.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/navi_start_node_automoc.dir
+/home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/navi_node_automoc.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/list_install_components.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/install.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/rebuild_cache.dir

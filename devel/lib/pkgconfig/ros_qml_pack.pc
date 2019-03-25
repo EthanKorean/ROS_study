@@ -1,0 +1,8 @@
+prefix=/home/roskinetic/dev/ros/devel
+
+Name: ros_qml_pack
+Description: Description of ros_qml_pack
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/roskinetic/dev/ros/devel/lib 
+Requires: std_msgs roscpp

@@ -504,6 +504,58 @@ guide_automoc/fast:
 .PHONY : guide_automoc/fast
 
 #=============================================================================
+# Target rules for targets named navi_start_node
+
+# Build rule for target.
+navi_start_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navi_start_node
+.PHONY : navi_start_node
+
+# fast build rule for target.
+navi_start_node/fast:
+	$(MAKE) -f ros_qml_pack/CMakeFiles/navi_start_node.dir/build.make ros_qml_pack/CMakeFiles/navi_start_node.dir/build
+.PHONY : navi_start_node/fast
+
+#=============================================================================
+# Target rules for targets named navi_node
+
+# Build rule for target.
+navi_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navi_node
+.PHONY : navi_node
+
+# fast build rule for target.
+navi_node/fast:
+	$(MAKE) -f ros_qml_pack/CMakeFiles/navi_node.dir/build.make ros_qml_pack/CMakeFiles/navi_node.dir/build
+.PHONY : navi_node/fast
+
+#=============================================================================
+# Target rules for targets named navi_start_node_automoc
+
+# Build rule for target.
+navi_start_node_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navi_start_node_automoc
+.PHONY : navi_start_node_automoc
+
+# fast build rule for target.
+navi_start_node_automoc/fast:
+	$(MAKE) -f ros_qml_pack/CMakeFiles/navi_start_node_automoc.dir/build.make ros_qml_pack/CMakeFiles/navi_start_node_automoc.dir/build
+.PHONY : navi_start_node_automoc/fast
+
+#=============================================================================
+# Target rules for targets named navi_node_automoc
+
+# Build rule for target.
+navi_node_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navi_node_automoc
+.PHONY : navi_node_automoc
+
+# fast build rule for target.
+navi_node_automoc/fast:
+	$(MAKE) -f ros_qml_pack/CMakeFiles/navi_node_automoc.dir/build.make ros_qml_pack/CMakeFiles/navi_node_automoc.dir/build
+.PHONY : navi_node_automoc/fast
+
+#=============================================================================
 # Target rules for targets named face_recog_sensor
 
 # Build rule for target.
@@ -568,6 +620,10 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... guide"
 	@echo "... guide_automoc"
+	@echo "... navi_start_node"
+	@echo "... navi_node"
+	@echo "... navi_start_node_automoc"
+	@echo "... navi_node_automoc"
 	@echo "... face_recog_sensor"
 	@echo "... face_recog_sensor_automoc"
 .PHONY : help
