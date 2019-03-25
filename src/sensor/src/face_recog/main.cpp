@@ -20,6 +20,10 @@ int main(int argc, char **argv) {
     QGuiApplication app(argc,argv);
     Main::MainWindow mw;
     QQmlApplicationEngine engine(&app);
+    QFutureWatcher<void> rosThread;
+    rosThread.setFuture(QtConcurrent::run(&ros::spin));
+    QObject::connect(&rosThread, &QFutureWatcher<void>::finished, &app, &QCoreApplication::quit);
+    QObject::connect(&app, &QCoreApplication::aboutToQuit, [](){ros::shutdown();});
     engine.rootContext()->setContextProperty("mw",&mw);
     engine.load(QUrl("qrc:///qml/main.qml"));
      return app.exec();

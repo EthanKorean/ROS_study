@@ -28,14 +28,6 @@
 /home/roskinetic/dev/ros/build/gmock/gtest/CMakeFiles/gtest_main.dir
 /home/roskinetic/dev/ros/build/gmock/gtest/CMakeFiles/install/strip.dir
 /home/roskinetic/dev/ros/build/gmock/gtest/CMakeFiles/install/local.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/rebuild_cache.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/edit_cache.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/list_install_components.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/install.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/install/local.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/install/strip.dir
-/home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/test.dir
 /home/roskinetic/dev/ros/build/monitor/CMakeFiles/list_install_components.dir
 /home/roskinetic/dev/ros/build/monitor/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/roskinetic/dev/ros/build/monitor/CMakeFiles/roscpp_generate_messages_py.dir

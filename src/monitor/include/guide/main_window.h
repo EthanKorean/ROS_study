@@ -3,6 +3,7 @@
 
 #include "ros/ros.h"
 #include "std_msgs/Bool.h"
+#include "std_msgs/String.h"
 #include <QObject>
 
 #include <QtCore>
@@ -22,7 +23,9 @@ signals:
     //void  hideMenu();
 private:
     ros::NodeHandle nh;
+    //ros::NodeHandle nh_pub;
     ros::Subscriber sub;
+    ros::Publisher pub;
     void receiveFaceSensMsg(const std_msgs::Bool::ConstPtr& msg);
 
 };//class

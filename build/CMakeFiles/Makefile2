@@ -410,56 +410,6 @@ clean: gmock/gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory mobile_robot_sim
-
-# Convenience name for "all" pass in the directory.
-mobile_robot_sim/all:
-
-.PHONY : mobile_robot_sim/all
-
-# Convenience name for "clean" pass in the directory.
-mobile_robot_sim/clean: mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : mobile_robot_sim/clean
-
-# Convenience name for "preinstall" pass in the directory.
-mobile_robot_sim/preinstall:
-
-.PHONY : mobile_robot_sim/preinstall
-
-#=============================================================================
-# Target rules for target mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/build.make mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/build.make mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roskinetic/dev/ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roskinetic/dev/ros/build/CMakeFiles 0
-.PHONY : mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/build.make mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-# clean rule for target.
-clean: mobile_robot_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory monitor
 
 # Convenience name for "all" pass in the directory.

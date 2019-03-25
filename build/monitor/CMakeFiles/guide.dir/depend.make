@@ -62,6 +62,7 @@ monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinet
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinetic/include/std_msgs/Bool.h
+monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
@@ -310,6 +311,7 @@ monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/ros/
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/std_msgs/Bool.h
+monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtConcurrent/QtConcurrent
@@ -696,6 +698,7 @@ monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/inclu
 monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
 monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/include/std_msgs/Bool.h
+monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/include/std_msgs/String.h
 monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject

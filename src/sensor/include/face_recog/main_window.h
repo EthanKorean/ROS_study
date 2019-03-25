@@ -14,8 +14,11 @@ public:
     MainWindow();
     ~MainWindow();
 private:
-    ros::NodeHandle nh;
+    ros::NodeHandle nh_pub;
     ros::Publisher  pub;
+    ros::NodeHandle nh_sub;
+    ros::Subscriber sub;
+    void recevieFinishFlag(const std_msgs::Bool::ConstPtr& flag);
 
 public slots:
     void slotFlag(const bool& flag);

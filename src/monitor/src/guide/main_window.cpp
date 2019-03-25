@@ -6,7 +6,8 @@ namespace Main{
         ROS_INFO("Step 1 :: ROS init complete");
         ROS_INFO("Step 2 :: Sub setting complete");
         sub = nh.subscribe("face_sensor",2,&MainWindow::receiveFaceSensMsg,this);
-       // QObject::connect(this,SIGNAL(guideSignal(int)),this,SLOT(slotGuide));
+        pub = nh.advertise<std_msgs::String>("target",20);
+        // QObject::connect(this,SIGNAL(guideSignal(int)),this,SLOT(slotGuide));
     }//MainWindow
 
     MainWindow::~MainWindow(){
@@ -22,18 +23,24 @@ namespace Main{
     }//recievFaceSensMsg
 
     void MainWindow::startGuide(int msg){
+        std_msgs::String target;
         switch(msg){
         case 1:
-            ROS_INFO("start to guide Air Gate");
+            target.data="Air Gate";
+            ROS_INFO("start to guide");
             break;
         case 2:
-            ROS_INFO("start to guide Toilet");
+            target.data="Toilet";
+            ROS_INFO("start to guide");
             break;
 
         case 3:
-            ROS_INFO("start to guide Help Desk");
+            target.data="Help Desk";
             break;
         }//end switch
+        ROS_INFO("start to guide %s",target.data.c_str());
+        pub.publish(target);
+        ros::spinOnce();
     }//slotsGuide
 
 }//namespace

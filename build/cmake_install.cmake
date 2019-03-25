@@ -117,7 +117,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/roskinetic/dev/ros/build/gmock/cmake_install.cmake")
-  include("/home/roskinetic/dev/ros/build/mobile_robot_sim/cmake_install.cmake")
   include("/home/roskinetic/dev/ros/build/monitor/cmake_install.cmake")
   include("/home/roskinetic/dev/ros/build/sensor/cmake_install.cmake")
 

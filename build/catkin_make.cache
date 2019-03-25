@@ -1,2 +1,2 @@
-mobile_robot_sim:monitor:sensor
+monitor:sensor
 -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/roskinetic/dev/ros/devel -DCMAKE_INSTALL_PREFIX=/home/roskinetic/dev/ros/install
