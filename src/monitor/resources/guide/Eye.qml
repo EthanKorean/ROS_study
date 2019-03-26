@@ -1,5 +1,5 @@
 import QtQuick 2.0
-
+import QtGraphicalEffects 1.0
 Rectangle {
     id:outEye
     width:90;
@@ -10,7 +10,13 @@ Rectangle {
     property real openEye:400
     property real closeEye: 200
     property real breakTime: 5000
-
+    RadialGradient{
+        anchors.fill:parent
+        gradient:Gradient{
+            GradientStop{position:0.0; color:"white"}
+            GradientStop{position:0.5; color:"black"}
+        }//Gradient
+    }//RadiaGradient
 
     Rectangle{
         id:inEye
@@ -20,6 +26,7 @@ Rectangle {
         radius: width/2
         x:8
         y:8
+
         SequentialAnimation{
             running: true;
             id:blink2;

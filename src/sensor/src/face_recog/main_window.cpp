@@ -7,7 +7,7 @@ namespace Main {
     MainWindow::MainWindow(){
         ROS_INFO("Step 1 :: ROS init complete");
         pub=nh_pub.advertise<std_msgs::Bool>("face_sensor",2);
-        sub=nh_sub.subscribe("finish_nav",2,&MainWindow::recevieFinishFlag,this);
+        sub=nh_sub.subscribe("finish_navi",2,&MainWindow::recieveFinishFlag,this);
         ROS_INFO("Step 2 :: Pub setting complete");
         QObject::connect(this,SIGNAL(signalFlag(bool)),this,SLOT(slotFlag(bool)));
     }//MainWindow()
@@ -19,10 +19,9 @@ namespace Main {
         }//end if
     }//~MainWindow();
 
-    void MainWindow::recevieFinishFlag(const std_msgs::Bool::ConstPtr& flag){
-       bool data = flag->data;
-        emit signalFlag(!data);
-    }//end
+    void MainWindow::recieveFinishFlag(const std_msgs::Bool::ConstPtr& flag){
+       emit finishGuideSignal();//connection in SensorBtn.qmlrecieveFinishFlag
+    }//recieveFinishFlag
 
     void MainWindow::slotFlag(const bool& flag){
         std_msgs::Bool msg;

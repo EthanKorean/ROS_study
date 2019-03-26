@@ -13,6 +13,7 @@ Rectangle {
         x:parent.width/2 - eyeGap-width;
         id:leftEye
         anchors.verticalCenter: parent.verticalCenter
+
     }//Eye:leftEye
     Eye{
         x : parent.width/2 + eyeGap

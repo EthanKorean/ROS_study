@@ -20,8 +20,6 @@ int main(int argc, char **argv)
   QMLMediator mediate(&app);
     ros::Subscriber sub = nh.subscribe("target", 1000, &QMLMediator::addString, &mediate);
 
-   mediate.setnode(nh);
-
   QFutureWatcher<void> rosThread;
   rosThread.setFuture(QtConcurrent::run(&ros::spin));
   QObject::connect(&rosThread, &QFutureWatcher<void>::finished, &app, &QCoreApplication::quit);

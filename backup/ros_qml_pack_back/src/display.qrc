@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>img/background.png</file>
+        <file>img/triangle_blue.png</file>
+        <file>display.qml</file>
+        <file>Square.qml</file>
+        <file>img/navi_background.png</file>
+    </qresource>
+</RCC>

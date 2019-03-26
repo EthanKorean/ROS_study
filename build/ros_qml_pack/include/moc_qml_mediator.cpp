@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_QMLMediator_t {
-    QByteArrayData data[11];
-    char stringdata0[117];
+    QByteArrayData data[10];
+    char stringdata0[106];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,20 +32,18 @@ static const qt_meta_stringdata_QMLMediator_t qt_meta_stringdata_QMLMediator = {
 QT_MOC_LITERAL(0, 0, 11), // "QMLMediator"
 QT_MOC_LITERAL(1, 12, 14), // "stringsChanged"
 QT_MOC_LITERAL(2, 27, 0), // ""
-QT_MOC_LITERAL(3, 28, 9), // "newString"
-QT_MOC_LITERAL(4, 38, 1), // "s"
-QT_MOC_LITERAL(5, 40, 12), // "targetString"
-QT_MOC_LITERAL(6, 53, 15), // "sstringsChanged"
-QT_MOC_LITERAL(7, 69, 13), // "newStringSlot"
-QT_MOC_LITERAL(8, 83, 16), // "targetStringSlot"
-QT_MOC_LITERAL(9, 100, 7), // "strings"
-QT_MOC_LITERAL(10, 108, 8) // "sstrings"
+QT_MOC_LITERAL(3, 28, 12), // "targetString"
+QT_MOC_LITERAL(4, 41, 1), // "s"
+QT_MOC_LITERAL(5, 43, 15), // "sstringsChanged"
+QT_MOC_LITERAL(6, 59, 13), // "finishChanged"
+QT_MOC_LITERAL(7, 73, 16), // "targetStringSlot"
+QT_MOC_LITERAL(8, 90, 8), // "sstrings"
+QT_MOC_LITERAL(9, 99, 6) // "finish"
 
     },
-    "QMLMediator\0stringsChanged\0\0newString\0"
-    "s\0targetString\0sstringsChanged\0"
-    "newStringSlot\0targetStringSlot\0strings\0"
-    "sstrings"
+    "QMLMediator\0stringsChanged\0\0targetString\0"
+    "s\0sstringsChanged\0finishChanged\0"
+    "targetStringSlot\0sstrings\0finish"
 };
 #undef QT_MOC_LITERAL
 
@@ -55,39 +53,37 @@ static const uint qt_meta_data_QMLMediator[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
-       2,   58, // properties
+       5,   14, // methods
+       2,   48, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   44,    2, 0x06 /* Public */,
-       3,    1,   45,    2, 0x06 /* Public */,
-       5,    1,   48,    2, 0x06 /* Public */,
-       6,    0,   51,    2, 0x06 /* Public */,
+       1,    0,   39,    2, 0x06 /* Public */,
+       3,    1,   40,    2, 0x06 /* Public */,
+       5,    0,   43,    2, 0x06 /* Public */,
+       6,    0,   44,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       7,    1,   52,    2, 0x08 /* Private */,
-       8,    1,   55,    2, 0x08 /* Private */,
+       7,    1,   45,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    4,
-    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void,
     QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QString,    4,
-    QMetaType::Void, QMetaType::QString,    4,
 
  // properties: name, type, flags
-       9, QMetaType::QVariantList, 0x00495001,
-      10, QMetaType::QString, 0x00495001,
+       8, QMetaType::QString, 0x00495001,
+       9, QMetaType::Bool, 0x00495103,
 
  // properties: notify_signal_id
-       0,
+       2,
        3,
 
        0        // eod
@@ -100,11 +96,10 @@ void QMLMediator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->stringsChanged(); break;
-        case 1: _t->newString((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 2: _t->targetString((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 3: _t->sstringsChanged(); break;
-        case 4: _t->newStringSlot((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 5: _t->targetStringSlot((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 1: _t->targetString((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 2: _t->sstringsChanged(); break;
+        case 3: _t->finishChanged(); break;
+        case 4: _t->targetStringSlot((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -118,19 +113,19 @@ void QMLMediator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         }
         {
             typedef void (QMLMediator::*_t)(QString );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QMLMediator::newString)) {
-                *result = 1;
-            }
-        }
-        {
-            typedef void (QMLMediator::*_t)(QString );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QMLMediator::targetString)) {
-                *result = 2;
+                *result = 1;
             }
         }
         {
             typedef void (QMLMediator::*_t)();
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QMLMediator::sstringsChanged)) {
+                *result = 2;
+            }
+        }
+        {
+            typedef void (QMLMediator::*_t)();
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&QMLMediator::finishChanged)) {
                 *result = 3;
             }
         }
@@ -141,11 +136,18 @@ void QMLMediator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
-        case 0: *reinterpret_cast< QVariantList*>(_v) = _t->getStrings(); break;
-        case 1: *reinterpret_cast< QString*>(_v) = _t->getSstrings(); break;
+        case 0: *reinterpret_cast< QString*>(_v) = _t->getSstrings(); break;
+        case 1: *reinterpret_cast< bool*>(_v) = _t->getFinish(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
+        QMLMediator *_t = static_cast<QMLMediator *>(_o);
+        Q_UNUSED(_t)
+        void *_v = _a[0];
+        switch (_id) {
+        case 1: _t->setFinish(*reinterpret_cast< bool*>(_v)); break;
+        default: break;
+        }
     } else if (_c == QMetaObject::ResetProperty) {
     }
 #endif // QT_NO_PROPERTIES
@@ -176,13 +178,13 @@ int QMLMediator::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 6;
+        _id -= 5;
     }
 #ifndef QT_NO_PROPERTIES
    else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
@@ -211,21 +213,20 @@ void QMLMediator::stringsChanged()
 }
 
 // SIGNAL 1
-void QMLMediator::newString(QString _t1)
+void QMLMediator::targetString(QString _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void QMLMediator::targetString(QString _t1)
+void QMLMediator::sstringsChanged()
 {
-    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
-    QMetaObject::activate(this, &staticMetaObject, 2, _a);
+    QMetaObject::activate(this, &staticMetaObject, 2, Q_NULLPTR);
 }
 
 // SIGNAL 3
-void QMLMediator::sstringsChanged()
+void QMLMediator::finishChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, Q_NULLPTR);
 }

@@ -106,8 +106,6 @@ Window {
                             dis_timer.repeat = false
                         } else if(distance == 0){
                             comment.finishUpdate()
-                            mediator.finish = true
-                            console.log("navi finish:", mediator.finish)
                         }
                     }
                 }

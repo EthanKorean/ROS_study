@@ -76,4 +76,14 @@ Rectangle {
         }//onClicked
     }//MouseArea
 
+    Connections{
+        onFinishGuideSignal:{
+            msg.text="Ready.."
+            off_ani.running=true;
+            effet.visible=false;
+            flag=false;
+            mw.signalFlag(flag);
+        }//finishGuideSignal
+    }//Connections
+
 }//Rectangle
