@@ -20,7 +20,8 @@ namespace Main {
     }//~MainWindow();
 
     void MainWindow::recieveFinishFlag(const std_msgs::Bool::ConstPtr& flag){
-       emit finishGuideSignal();//connection in SensorBtn.qmlrecieveFinishFlag
+         ROS_INFO("Finish_navi  \"%s\"", flag->data ? "true" : "false" );
+        emit finishGuideSignal();//connection in SensorBtn.qmlrecieveFinishFlag
     }//recieveFinishFlag
 
     void MainWindow::slotFlag(const bool& flag){

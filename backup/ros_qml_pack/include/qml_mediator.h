@@ -3,7 +3,6 @@
 
 #include "ros/ros.h"
 #include "std_msgs/String.h"
-#include "std_msgs/Bool.h"
 
 #include <QObject>
 #include <QVariant>
@@ -19,7 +18,7 @@ class QMLMediator : public QObject
     Q_PROPERTY(bool finish READ getFinish WRITE setFinish NOTIFY finishChanged);
     bool m_bIsfinish;
 
-    ros::Publisher m_pub;
+    ros::NodeHandle m_nh;
 
 public:
     QMLMediator(QObject* parent = nullptr)
@@ -27,8 +26,8 @@ public:
         connect(this, &QMLMediator::targetString, this, &QMLMediator::targetStringSlot);
     }
 
-    void setPub(ros::Publisher pub){
-      m_pub = pub;
+    void setnode(ros::NodeHandle nh){
+      m_nh = nh;
     }
 
     bool getFinish(){
@@ -60,15 +59,16 @@ public:
     }
 
     void finishSlot(bool bIsfinish){
-      qDebug() << "call in  : " <<bIsfinish;
+      qDebug() << "call in  : ";
+      ros::Publisher finish_pub = m_nh.advertise<std_msgs::String>("finish_navi", 1000);
 
       ros::Rate loop_rate(10);
       if(ros::ok())
       {
-        std_msgs::Bool msg;
-        msg.data = bIsfinish;
+        std_msgs::String msg;
+        msg.data = "finish!!";
 
-        m_pub.publish(msg);
+        finish_pub.publish(msg);
 
         ros::spinOnce();
       }

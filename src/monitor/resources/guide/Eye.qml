@@ -10,13 +10,6 @@ Rectangle {
     property real openEye:400
     property real closeEye: 200
     property real breakTime: 5000
-    RadialGradient{
-        anchors.fill:parent
-        gradient:Gradient{
-            GradientStop{position:0.0; color:"white"}
-            GradientStop{position:0.5; color:"black"}
-        }//Gradient
-    }//RadiaGradient
 
     Rectangle{
         id:inEye

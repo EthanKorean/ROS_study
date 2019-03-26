@@ -77,11 +77,13 @@ Rectangle {
     }//MouseArea
 
     Connections{
+        target: mw
         onFinishGuideSignal:{
             msg.text="Ready.."
             off_ani.running=true;
             effet.visible=false;
             flag=false;
+            console.log("is it working?"+flag);
             mw.signalFlag(flag);
         }//finishGuideSignal
     }//Connections
