@@ -25,10 +25,15 @@ namespace Main {
     }//recieveFinishFlag
 
     void MainWindow::slotFlag(const bool& flag){
-        std_msgs::Bool msg;
-        msg.data=flag;
-        pub.publish(msg);
-        ros::spinOnce();
+        ros::Rate loop_rate(10);
+        if(ros::ok())
+        {
+            std_msgs::Bool msg;
+            msg.data=flag;
+
+            pub.publish(msg);
+            ros::spinOnce();
+        }//end if
         ROS_INFO("Send message \"%s\"", flag ? "true" : "false" );
     }//slotFlag
 

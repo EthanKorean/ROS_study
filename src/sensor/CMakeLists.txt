@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs
 )
+
 find_package(Qt5 REQUIRED COMPONENTS
     Core
     Qml

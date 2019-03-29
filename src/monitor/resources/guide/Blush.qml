@@ -8,8 +8,9 @@ Item {
     RadialGradient{
         anchors.fill:parent
         gradient:Gradient{
-            GradientStop{position:0.0; color:"red"}
-            GradientStop{position:0.5; color:face.color}
+            GradientStop{position:0.0; color:Qt.rgba(0.5,0,0,0.8)}
+            GradientStop{position:0.2; color: Qt.rgba(0.5,0,0,0.5)}
+            GradientStop{position:0.5; color: Qt.rgba(0.5,0,0,0)}
         }//Gradient
     }//RadiaGradient
 }//Rectangle

@@ -16,7 +16,7 @@
 *****************************************************************************/
 
 int main(int argc, char **argv) {
-    ros::init(argc,argv,"Face_Recoginition_Sensor");
+    ros::init(argc,argv,"face_recog_sensor");
     QGuiApplication app(argc,argv);
     Main::MainWindow mw;
     QQmlApplicationEngine engine(&app);

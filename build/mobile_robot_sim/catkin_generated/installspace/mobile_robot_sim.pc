@@ -5,4 +5,4 @@ Description: Description of mobile_robot_sim
 Version: 0.0.0
 Cflags: 
 Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: 
+Requires: roscpp std_msgs sensor_msgs tf2 tf2_ros

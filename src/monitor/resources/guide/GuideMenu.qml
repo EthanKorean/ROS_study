@@ -3,23 +3,17 @@ import QtGraphicalEffects 1.0
 
 Item {
     width:parent.width
-    height: parent.height-50
-    y:50
+    height: parent.height*3/4
+    y:parent.height - height;
     visible: true
 
-    RadialGradient{
-        anchors.fill:parent
-        gradient:Gradient{
-            GradientStop{position:0.5; color:Qt.rgba(0.80,0.949,0.474,1)}
-            GradientStop{position:0.1; color:"white"}
-        }//Gradient
-    }//RadiaGradient
+
     Column{
         anchors.horizontalCenter: parent.horizontalCenter;
         anchors.verticalCenter: parent.verticalCenter;
 
         GuideMenuBtn{
-            txt:"Air Gate"
+            txt:"Route"
             img:"img/airgate.png"
             msg:1
         }//GuideMenuBtn

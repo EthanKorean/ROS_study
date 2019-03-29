@@ -47,3 +47,18 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mobile_robot_sim" TYPE FILE FILES "/home/roskinetic/dev/ros/src/mobile_robot_sim/package.xml")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/roskinetic/dev/ros/build/mobile_robot_sim/catkin_generated/installspace/mobile_robot_sim.pc")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mobile_robot_sim/cmake" TYPE FILE FILES
+    "/home/roskinetic/dev/ros/build/mobile_robot_sim/catkin_generated/installspace/mobile_robot_simConfig.cmake"
+    "/home/roskinetic/dev/ros/build/mobile_robot_sim/catkin_generated/installspace/mobile_robot_simConfig-version.cmake"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mobile_robot_sim" TYPE FILE FILES "/home/roskinetic/dev/ros/src/mobile_robot_sim/package.xml")
+endif()
+

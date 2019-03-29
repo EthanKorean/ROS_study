@@ -5,8 +5,6 @@ namespace Main{
     MainWindow::MainWindow(){
         ROS_INFO("Step 1 :: ROS init complete");
         ROS_INFO("Step 2 :: Sub setting complete");
-        sub = nh.subscribe("face_sensor",2,&MainWindow::receiveFaceSensMsg,this);
-        pub = nh.advertise<std_msgs::String>("target",20);
         // QObject::connect(this,SIGNAL(guideSignal(int)),this,SLOT(slotGuide));
     }//MainWindow
 
@@ -23,24 +21,34 @@ namespace Main{
     }//recievFaceSensMsg
 
     void MainWindow::startGuide(int msg){
-        std_msgs::String target;
-        switch(msg){
-        case 1:
-            target.data="Air Gate";
-            ROS_INFO("start to guide");
-            break;
-        case 2:
-            target.data="Toilet";
-            ROS_INFO("start to guide");
-            break;
+        ros::Rate loop_rate(10);
+        if(ros::ok()){
+            std_msgs::String target;
+            switch(msg){
+            case 1:
+                target.data="Air Gate";
+                ROS_INFO("start to guide");
+                break;
+            case 2:
+                target.data="Toilet";
+                ROS_INFO("start to guide");
+                break;
 
-        case 3:
-            target.data="Help Desk";
-            break;
-        }//end switch
-        ROS_INFO("start to guide %s",target.data.c_str());
-        pub.publish(target);
-        ros::spinOnce();
+            case 3:
+                target.data="Help Desk";
+                break;
+            }//end switch
+            ROS_INFO("start to guide %s",target.data.c_str());
+            mPub.publish(target);
+            ros::spinOnce();
+        }//end if
     }//slotsGuide
 
+
+    void MainWindow::setPub(ros::Publisher pub){
+        this->mPub=pub;
+    }
+    void MainWindow::setSub(ros::Subscriber sub){
+        this->mSub=sub;
+    }
 }//namespace

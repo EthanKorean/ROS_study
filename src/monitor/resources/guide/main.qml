@@ -1,23 +1,37 @@
 import QtQuick 2.0
 import QtQuick.Window 2.2
 import QtQuick.Controls 1.2
-
+import QtGraphicalEffects 1.0
 
 Window {
 
-    width:600
+    id:window
+    width:550
     height:400
     visible:true
+    color:Qt.rgba(0.15,0.15,0.15,1)
+    RadialGradient{
+        anchors.fill:parent
+        gradient:Gradient{
+            GradientStop{position:0.1; color:Qt.rgba(0,0,0.1,0.86)}
+            GradientStop{position:0.3; color:Qt.rgba(0.2,0.2,0.2,0.9)}
+            GradientStop{position:0.5; color:Qt.rgba(0,0,0.1,0.4)}
+            GradientStop{position:0.6; color:window.color}
+            GradientStop{position:0.8; color:Qt.rgba(0,0,0.1,0.86)}
+        }//Gradient
+    }//RadiaGradient
+    GuideMenu{
+        id:menu;
+        visible: false;
+        opacity: 0
+
+    }//Face
     Face{
         id:face
         visible: true;
         opacity: 1
     }//Face
-    GuideMenu{
-        id:menu;
-        visible: false;
-        opacity: 0
-    }//Face
+
 
     Connections{
         target: mw
@@ -45,9 +59,15 @@ Window {
         repeat: false;
         running:false;
         onTriggered: {
-            faceScaleDown.running=true;
-            faceUpY.running=true;
+
+
+            faceOpaUp.running=false;
+            hideMenu.running=false;
+            /////////////////////////////////
+
             showMenu.running=true;
+
+            faceOpaDown.running=true;
         }
     }
     PropertyAnimation{
@@ -55,28 +75,20 @@ Window {
         target: menu
         properties: "opacity"
         duration: 1000
-
         to:1.0
         running:false
     }//PropertyAnimation
 
+
     NumberAnimation {
-        id: faceScaleDown
+        id: faceOpaDown
         target: face
-        property: "scale"
+        property: "opacity"
         duration: 500
         to:0
         running: false;
     }
-    NumberAnimation {
-        id: faceUpY
-        target: face
-        property: "y"
-        duration: 200
-        to:0
-        easing.type: Easing.InOutQuad
-        running: false;
-    }
+
 
 //////////////////////////////////////////////////////
 /////////////////////////// OFF
@@ -87,25 +99,21 @@ Window {
         repeat: false;
         running:false;
         onTriggered: {
-            faceScaleUp.running=true;
+            showMenu.running=false;
+
+            /////////////////////////////////
+
             faceOpaUp.running=true;
             hideMenu.running=true;
 
         }
     }
-    NumberAnimation {
-        id: faceScaleUp
-        target: face
-        property: "scale"
-        duration: 300
-        to:1
-        running: false;
-    }
+
     NumberAnimation {
         id: faceOpaUp
         target: face
         property: "opacity"
-        duration: 1000
+        duration: 500
         to:1
         running: false;
     }

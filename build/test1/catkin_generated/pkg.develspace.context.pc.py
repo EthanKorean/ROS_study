@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "test1"
 PROJECT_SPACE_DIR = "/home/roskinetic/dev/ros/devel"
-PROJECT_VERSION = "0.1.0"
+PROJECT_VERSION = "5.1.0"

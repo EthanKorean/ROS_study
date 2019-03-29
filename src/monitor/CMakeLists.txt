@@ -3,6 +3,11 @@ project(monitor)
 
 add_compile_options(-std=c++11)
 
+SET(CMAKE_VERBOSE_MAKEFILE 1)
+
+
+
+
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs

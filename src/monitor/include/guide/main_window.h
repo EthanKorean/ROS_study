@@ -5,7 +5,6 @@
 #include "std_msgs/Bool.h"
 #include "std_msgs/String.h"
 #include <QObject>
-
 #include <QtCore>
 
 
@@ -17,16 +16,18 @@ public:
     MainWindow();
     ~MainWindow();
     Q_INVOKABLE void startGuide(int msg);
+    void setPub(ros::Publisher pub);
+    void setSub(ros::Subscriber sub);
+    void receiveFaceSensMsg(const std_msgs::Bool::ConstPtr& msg);
+
 signals:
     void    faceRecogFlag(bool flag);
     int     guideSignal(int msg);
     //void  hideMenu();
 private:
-    ros::NodeHandle nh;
-    //ros::NodeHandle nh_pub;
-    ros::Subscriber sub;
-    ros::Publisher pub;
-    void receiveFaceSensMsg(const std_msgs::Bool::ConstPtr& msg);
+
+    ros::Subscriber mSub;
+    ros::Publisher mPub;
 
 };//class
 

@@ -40,6 +40,7 @@ public:
       qDebug() << "setFinish : " << bIsFinish;
       finishChanged();
       finishSlot(bIsFinish);
+      targetString("");
     }
 
 
@@ -60,7 +61,7 @@ public:
     }
 
     void finishSlot(bool bIsfinish){
-      qDebug() << "call in  : " <<bIsfinish;
+      qDebug() << "call in  : ";
 
       ros::Rate loop_rate(10);
       if(ros::ok())

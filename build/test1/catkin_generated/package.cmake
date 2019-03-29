@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "test1")
-set(test1_VERSION "0.1.0")
-set(test1_MAINTAINER "ROSKinetic <ROSKinetic@gmail.com>")
+set(test1_VERSION "5.1.0")
+set(test1_MAINTAINER "ROSKinetic <anger010@naver.com>")
 set(test1_PACKAGE_FORMAT "1")
 set(test1_BUILD_DEPENDS "qt_build" "roscpp" "libqt4-dev")
 set(test1_BUILD_EXPORT_DEPENDS "qt_build" "roscpp" "libqt4-dev")

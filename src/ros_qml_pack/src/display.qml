@@ -87,6 +87,7 @@ Window {
                 anchors.top: parent.top
 
                 function start(){
+                    console.log("target text changed!!")
                     if(target.text == "target : "){
                         ;
                     } else {

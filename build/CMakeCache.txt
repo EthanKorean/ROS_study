@@ -910,6 +910,9 @@ class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
+
 //Value Computed by CMake
 face_recog_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/sensor
 
@@ -978,7 +981,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -1000,6 +1003,15 @@ monitor_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/monitor
 
 //Value Computed by CMake
 monitor_SOURCE_DIR:STATIC=/home/roskinetic/dev/ros/src/monitor
+
+//The directory containing a CMake configuration file for move_base.
+move_base_DIR:PATH=/opt/ros/kinetic/share/move_base/cmake
+
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/kinetic/share/move_base_msgs/cmake
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
 
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
@@ -1097,6 +1109,9 @@ sensor_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/sensor
 //Value Computed by CMake
 sensor_SOURCE_DIR:STATIC=/home/roskinetic/dev/ros/src/sensor
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
+
 //Value Computed by CMake
 sensor_publisher_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/test8
 
@@ -1176,7 +1191,7 @@ tf2_py_DIR:PATH=/opt/ros/kinetic/share/tf2_py/cmake
 tf2_ros_DIR:PATH=/opt/ros/kinetic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf2_sensor_msgs.
-tf2_sensor_msgs_DIR:PATH=tf2_sensor_msgs_DIR-NOTFOUND
+tf2_sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/tf2_sensor_msgs/cmake
 
 //Value Computed by CMake
 ttt_BINARY_DIR:STATIC=/home/roskinetic/dev/ros/build/ttt
@@ -1303,7 +1318,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1388,6 +1403,8 @@ QT_DOC_DIR-ADVANCED:INTERNAL=1
 QT_HEADERS_DIR:INTERNAL=/usr/include/qt4
 //ADVANCED property for variable: QT_IMPORTS_DIR
 QT_IMPORTS_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_LIBRARY_DIR
+QT_LIBRARY_DIR-ADVANCED:INTERNAL=1
 //Qt library dir
 QT_LIBRARY_DIR:INTERNAL=/usr/lib/x86_64-linux-gnu
 //ADVANCED property for variable: QT_LINGUIST_EXECUTABLE
