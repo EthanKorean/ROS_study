@@ -10,5 +10,6 @@
         <file>img/airgate.png</file>
         <file>img/help_desk.png</file>
         <file>img/toilet.png</file>
+        <file>img/hotel.png</file>
     </qresource>
 </RCC>

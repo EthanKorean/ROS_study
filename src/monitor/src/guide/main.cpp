@@ -20,11 +20,7 @@ int main(int argc,char **argv){
     ros::init(argc,argv,"guide");
     QGuiApplication app(argc,argv); 
     Main::MainWindow mw;
-    ros::NodeHandle nh;
-    ros::Subscriber sub = nh.subscribe("face_sensor",2,&Main::MainWindow::receiveFaceSensMsg,&mw);
-    ros::Publisher pub =  nh.advertise<std_msgs::String>("target",20);
-    mw.setPub(pub);
-    mw.setSub(sub);
+
     QQmlApplicationEngine engine(&app);
     QFutureWatcher<void> rosThread;
     rosThread.setFuture(QtConcurrent::run(&ros::spin));

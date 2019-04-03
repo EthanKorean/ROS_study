@@ -3,6 +3,9 @@
 namespace Main{
 
     MainWindow::MainWindow(){
+
+        mSub = mNh.subscribe("face_detect_flag",2,&Main::MainWindow::receiveFaceSensMsg,this);
+        mPub =  mNh.advertise<std_msgs::String>("target",20);
         ROS_INFO("Step 1 :: ROS init complete");
         ROS_INFO("Step 2 :: Sub setting complete");
         // QObject::connect(this,SIGNAL(guideSignal(int)),this,SLOT(slotGuide));
@@ -22,20 +25,30 @@ namespace Main{
 
     void MainWindow::startGuide(int msg){
         ros::Rate loop_rate(10);
+
         if(ros::ok()){
             std_msgs::String target;
             switch(msg){
-            case 1:
-                target.data="Air Gate";
-                ROS_INFO("start to guide");
+            case 10:
+                target.data="Hotel_Preview";
                 break;
-            case 2:
+            case 11:
+                target.data="Hotel";
+                break;
+            case 20:
+                target.data="Toilet_Preview";
+                break;
+            case 21:
                 target.data="Toilet";
-                ROS_INFO("start to guide");
                 break;
-
-            case 3:
-                target.data="Help Desk";
+            case 30:
+                target.data="HelpDesk_Preview";
+                break;
+            case 31:
+                target.data="HelpDesk";
+                break;
+            case 9999:
+                target.data="Cancel";
                 break;
             }//end switch
             ROS_INFO("start to guide %s",target.data.c_str());
@@ -43,7 +56,6 @@ namespace Main{
             ros::spinOnce();
         }//end if
     }//slotsGuide
-
 
     void MainWindow::setPub(ros::Publisher pub){
         this->mPub=pub;

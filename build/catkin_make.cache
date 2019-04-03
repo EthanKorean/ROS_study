@@ -1,2 +1,2 @@
-mobile_robot_sim:monitor:ros_qml_pack:sensor:test1
+mobile_robot_sim:monitor:opencv_tutorial:ros_qml_pack:sensor:test1
 -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/roskinetic/dev/ros/devel -DCMAKE_INSTALL_PREFIX=/home/roskinetic/dev/ros/install

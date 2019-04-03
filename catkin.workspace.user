@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.7.84, 2019-03-28T16:19:18. -->
+<!-- Written by QtCreator 4.7.84, 2019-04-03T18:03:59. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -173,10 +173,10 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
      <value type="QString">CMAKE_PREFIX_PATH=/home/roskinetic/dev/ros/devel:/opt/ros/kinetic</value>
      <value type="QString">LD_LIBRARY_PATH=/home/roskinetic/dev/ros/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu</value>
-     <value type="QString">PATH=/opt/ros/kinetic/bin:/home/roskinetic/bin:/home/roskinetic/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
+     <value type="QString">PATH=/home/roskinetic/dev/ros/devel/bin:/opt/ros/kinetic/bin:/home/roskinetic/bin:/home/roskinetic/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
      <value type="QString">PKG_CONFIG_PATH=/home/roskinetic/dev/ros/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig</value>
      <value type="QString">PWD=/home/roskinetic/dev/ros</value>
-     <value type="QString">PYTHONPATH=/opt/ros/kinetic/lib/python2.7/dist-packages</value>
+     <value type="QString">PYTHONPATH=/home/roskinetic/dev/ros/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages</value>
      <value type="QString">QTDIR</value>
      <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/roskinetic/dev/ros/devel/share/common-lisp</value>
      <value type="QString">ROS_DISTRO=kinetic</value>

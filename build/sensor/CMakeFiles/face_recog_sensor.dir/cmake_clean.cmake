@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "face_detector_automoc.cpp"
   "face_recog_sensor_automoc.cpp"
   "include/face_recog/moc_main_window.cpp"
   "qrc_main.cpp"

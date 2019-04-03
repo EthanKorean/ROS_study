@@ -22,10 +22,9 @@ public:
 
 signals:
     void    faceRecogFlag(bool flag);
-    int     guideSignal(int msg);
-    //void  hideMenu();
-private:
 
+private:
+    ros::NodeHandle mNh;
     ros::Subscriber mSub;
     ros::Publisher mPub;
 

@@ -22,14 +22,15 @@ Window {
     }//RadiaGradient
     GuideMenu{
         id:menu;
-        visible: false;
-        opacity: 0
+        visible: true;
+        opacity: 1
 
     }//Face
     Face{
         id:face
-        visible: true;
-        opacity: 1
+        visible: false;
+        opacity: 0
+
     }//Face
 
 
@@ -37,7 +38,7 @@ Window {
         target: mw
         onFaceRecogFlag:{
             face.isRecognized(flag);
-             sensOff.running=false;
+            sensOff.running=false;
             sensOn.running=false;
             if(flag){
                 menu.visible=true

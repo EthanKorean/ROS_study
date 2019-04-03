@@ -92,6 +92,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -124,17 +135,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -169,6 +169,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+sensor/CMakeFiles/face_detector.dir/rule:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f CMakeFiles/Makefile2 sensor/CMakeFiles/face_detector.dir/rule
+.PHONY : sensor/CMakeFiles/face_detector.dir/rule
+
+# Convenience name for target.
+face_detector: sensor/CMakeFiles/face_detector.dir/rule
+
+.PHONY : face_detector
+
+# fast build rule for target.
+face_detector/fast:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/build
+.PHONY : face_detector/fast
+
+# Convenience name for target.
 sensor/CMakeFiles/face_recog_sensor.dir/rule:
 	cd /home/roskinetic/dev/ros/build && $(MAKE) -f CMakeFiles/Makefile2 sensor/CMakeFiles/face_recog_sensor.dir/rule
 .PHONY : sensor/CMakeFiles/face_recog_sensor.dir/rule
@@ -184,6 +199,21 @@ face_recog_sensor/fast:
 .PHONY : face_recog_sensor/fast
 
 # Convenience name for target.
+sensor/CMakeFiles/face_detector_automoc.dir/rule:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f CMakeFiles/Makefile2 sensor/CMakeFiles/face_detector_automoc.dir/rule
+.PHONY : sensor/CMakeFiles/face_detector_automoc.dir/rule
+
+# Convenience name for target.
+face_detector_automoc: sensor/CMakeFiles/face_detector_automoc.dir/rule
+
+.PHONY : face_detector_automoc
+
+# fast build rule for target.
+face_detector_automoc/fast:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector_automoc.dir/build.make sensor/CMakeFiles/face_detector_automoc.dir/build
+.PHONY : face_detector_automoc/fast
+
+# Convenience name for target.
 sensor/CMakeFiles/face_recog_sensor_automoc.dir/rule:
 	cd /home/roskinetic/dev/ros/build && $(MAKE) -f CMakeFiles/Makefile2 sensor/CMakeFiles/face_recog_sensor_automoc.dir/rule
 .PHONY : sensor/CMakeFiles/face_recog_sensor_automoc.dir/rule
@@ -197,6 +227,33 @@ face_recog_sensor_automoc: sensor/CMakeFiles/face_recog_sensor_automoc.dir/rule
 face_recog_sensor_automoc/fast:
 	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_recog_sensor_automoc.dir/build.make sensor/CMakeFiles/face_recog_sensor_automoc.dir/build
 .PHONY : face_recog_sensor_automoc/fast
+
+face_detector_automoc.o: face_detector_automoc.cpp.o
+
+.PHONY : face_detector_automoc.o
+
+# target to build an object file
+face_detector_automoc.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.o
+.PHONY : face_detector_automoc.cpp.o
+
+face_detector_automoc.i: face_detector_automoc.cpp.i
+
+.PHONY : face_detector_automoc.i
+
+# target to preprocess a source file
+face_detector_automoc.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.i
+.PHONY : face_detector_automoc.cpp.i
+
+face_detector_automoc.s: face_detector_automoc.cpp.s
+
+.PHONY : face_detector_automoc.s
+
+# target to generate assembly for a file
+face_detector_automoc.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.s
+.PHONY : face_detector_automoc.cpp.s
 
 face_recog_sensor_automoc.o: face_recog_sensor_automoc.cpp.o
 
@@ -224,6 +281,60 @@ face_recog_sensor_automoc.s: face_recog_sensor_automoc.cpp.s
 face_recog_sensor_automoc.cpp.s:
 	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_recog_sensor.dir/build.make sensor/CMakeFiles/face_recog_sensor.dir/face_recog_sensor_automoc.cpp.s
 .PHONY : face_recog_sensor_automoc.cpp.s
+
+include/face_detector/moc_camera.o: include/face_detector/moc_camera.cpp.o
+
+.PHONY : include/face_detector/moc_camera.o
+
+# target to build an object file
+include/face_detector/moc_camera.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o
+.PHONY : include/face_detector/moc_camera.cpp.o
+
+include/face_detector/moc_camera.i: include/face_detector/moc_camera.cpp.i
+
+.PHONY : include/face_detector/moc_camera.i
+
+# target to preprocess a source file
+include/face_detector/moc_camera.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.i
+.PHONY : include/face_detector/moc_camera.cpp.i
+
+include/face_detector/moc_camera.s: include/face_detector/moc_camera.cpp.s
+
+.PHONY : include/face_detector/moc_camera.s
+
+# target to generate assembly for a file
+include/face_detector/moc_camera.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.s
+.PHONY : include/face_detector/moc_camera.cpp.s
+
+include/face_detector/moc_sub_node_thread.o: include/face_detector/moc_sub_node_thread.cpp.o
+
+.PHONY : include/face_detector/moc_sub_node_thread.o
+
+# target to build an object file
+include/face_detector/moc_sub_node_thread.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o
+.PHONY : include/face_detector/moc_sub_node_thread.cpp.o
+
+include/face_detector/moc_sub_node_thread.i: include/face_detector/moc_sub_node_thread.cpp.i
+
+.PHONY : include/face_detector/moc_sub_node_thread.i
+
+# target to preprocess a source file
+include/face_detector/moc_sub_node_thread.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.i
+.PHONY : include/face_detector/moc_sub_node_thread.cpp.i
+
+include/face_detector/moc_sub_node_thread.s: include/face_detector/moc_sub_node_thread.cpp.s
+
+.PHONY : include/face_detector/moc_sub_node_thread.s
+
+# target to generate assembly for a file
+include/face_detector/moc_sub_node_thread.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.s
+.PHONY : include/face_detector/moc_sub_node_thread.cpp.s
 
 include/face_recog/moc_main_window.o: include/face_recog/moc_main_window.cpp.o
 
@@ -278,6 +389,87 @@ qrc_main.s: qrc_main.cpp.s
 qrc_main.cpp.s:
 	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_recog_sensor.dir/build.make sensor/CMakeFiles/face_recog_sensor.dir/qrc_main.cpp.s
 .PHONY : qrc_main.cpp.s
+
+src/face_detector/camera.o: src/face_detector/camera.cpp.o
+
+.PHONY : src/face_detector/camera.o
+
+# target to build an object file
+src/face_detector/camera.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o
+.PHONY : src/face_detector/camera.cpp.o
+
+src/face_detector/camera.i: src/face_detector/camera.cpp.i
+
+.PHONY : src/face_detector/camera.i
+
+# target to preprocess a source file
+src/face_detector/camera.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.i
+.PHONY : src/face_detector/camera.cpp.i
+
+src/face_detector/camera.s: src/face_detector/camera.cpp.s
+
+.PHONY : src/face_detector/camera.s
+
+# target to generate assembly for a file
+src/face_detector/camera.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.s
+.PHONY : src/face_detector/camera.cpp.s
+
+src/face_detector/main.o: src/face_detector/main.cpp.o
+
+.PHONY : src/face_detector/main.o
+
+# target to build an object file
+src/face_detector/main.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o
+.PHONY : src/face_detector/main.cpp.o
+
+src/face_detector/main.i: src/face_detector/main.cpp.i
+
+.PHONY : src/face_detector/main.i
+
+# target to preprocess a source file
+src/face_detector/main.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.i
+.PHONY : src/face_detector/main.cpp.i
+
+src/face_detector/main.s: src/face_detector/main.cpp.s
+
+.PHONY : src/face_detector/main.s
+
+# target to generate assembly for a file
+src/face_detector/main.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.s
+.PHONY : src/face_detector/main.cpp.s
+
+src/face_detector/sub_node_thread.o: src/face_detector/sub_node_thread.cpp.o
+
+.PHONY : src/face_detector/sub_node_thread.o
+
+# target to build an object file
+src/face_detector/sub_node_thread.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.o
+.PHONY : src/face_detector/sub_node_thread.cpp.o
+
+src/face_detector/sub_node_thread.i: src/face_detector/sub_node_thread.cpp.i
+
+.PHONY : src/face_detector/sub_node_thread.i
+
+# target to preprocess a source file
+src/face_detector/sub_node_thread.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.i
+.PHONY : src/face_detector/sub_node_thread.cpp.i
+
+src/face_detector/sub_node_thread.s: src/face_detector/sub_node_thread.cpp.s
+
+.PHONY : src/face_detector/sub_node_thread.s
+
+# target to generate assembly for a file
+src/face_detector/sub_node_thread.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.s
+.PHONY : src/face_detector/sub_node_thread.cpp.s
 
 src/face_recog/main.o: src/face_recog/main.cpp.o
 
@@ -342,21 +534,41 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... face_detector"
 	@echo "... edit_cache"
 	@echo "... face_recog_sensor"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... test"
+	@echo "... face_detector_automoc"
 	@echo "... face_recog_sensor_automoc"
+	@echo "... face_detector_automoc.o"
+	@echo "... face_detector_automoc.i"
+	@echo "... face_detector_automoc.s"
 	@echo "... face_recog_sensor_automoc.o"
 	@echo "... face_recog_sensor_automoc.i"
 	@echo "... face_recog_sensor_automoc.s"
+	@echo "... include/face_detector/moc_camera.o"
+	@echo "... include/face_detector/moc_camera.i"
+	@echo "... include/face_detector/moc_camera.s"
+	@echo "... include/face_detector/moc_sub_node_thread.o"
+	@echo "... include/face_detector/moc_sub_node_thread.i"
+	@echo "... include/face_detector/moc_sub_node_thread.s"
 	@echo "... include/face_recog/moc_main_window.o"
 	@echo "... include/face_recog/moc_main_window.i"
 	@echo "... include/face_recog/moc_main_window.s"
 	@echo "... qrc_main.o"
 	@echo "... qrc_main.i"
 	@echo "... qrc_main.s"
+	@echo "... src/face_detector/camera.o"
+	@echo "... src/face_detector/camera.i"
+	@echo "... src/face_detector/camera.s"
+	@echo "... src/face_detector/main.o"
+	@echo "... src/face_detector/main.i"
+	@echo "... src/face_detector/main.s"
+	@echo "... src/face_detector/sub_node_thread.o"
+	@echo "... src/face_detector/sub_node_thread.i"
+	@echo "... src/face_detector/sub_node_thread.s"
 	@echo "... src/face_recog/main.o"
 	@echo "... src/face_recog/main.i"
 	@echo "... src/face_recog/main.s"

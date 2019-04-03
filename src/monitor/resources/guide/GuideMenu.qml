@@ -10,24 +10,23 @@ Item {
 
     Column{
         anchors.horizontalCenter: parent.horizontalCenter;
-        anchors.verticalCenter: parent.verticalCenter;
 
         GuideMenuBtn{
-            txt:"Route"
-            img:"img/airgate.png"
-            msg:1
+            txt:"Hotel"
+            img:"img/hotel.png"
+            msg:10
         }//GuideMenuBtn
 
         GuideMenuBtn{
             txt:"Toilet"
             img:"img/toilet.png"
-            msg:2
+            msg:20
         }//GuideMenuBtn
 
         GuideMenuBtn{
             txt:"Help Desk"
             img:"img/help_desk.png"
-            msg:3
+            msg:30
         }//GuideMenuBtn
     }//Row
 }//Rectange

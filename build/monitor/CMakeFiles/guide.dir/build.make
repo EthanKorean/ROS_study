@@ -74,6 +74,7 @@ monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Guide
 monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/airgate.png
 monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/help_desk.png
 monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/toilet.png
+monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/hotel.png
 monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating qrc_main.cpp"
 	cd /home/roskinetic/dev/ros/build/monitor && /usr/lib/x86_64-linux-gnu/qt5/bin/rcc --name main --output /home/roskinetic/dev/ros/build/monitor/qrc_main.cpp /home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc
