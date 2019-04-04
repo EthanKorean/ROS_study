@@ -477,32 +477,32 @@ include/guide/moc_main_window.cpp.s:
 	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.s
 .PHONY : include/guide/moc_main_window.cpp.s
 
-qrc_main.o: qrc_main.cpp.o
+qrc_resource.o: qrc_resource.cpp.o
 
-.PHONY : qrc_main.o
+.PHONY : qrc_resource.o
 
 # target to build an object file
-qrc_main.cpp.o:
-	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_main.cpp.o
-.PHONY : qrc_main.cpp.o
+qrc_resource.cpp.o:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o
+.PHONY : qrc_resource.cpp.o
 
-qrc_main.i: qrc_main.cpp.i
+qrc_resource.i: qrc_resource.cpp.i
 
-.PHONY : qrc_main.i
+.PHONY : qrc_resource.i
 
 # target to preprocess a source file
-qrc_main.cpp.i:
-	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_main.cpp.i
-.PHONY : qrc_main.cpp.i
+qrc_resource.cpp.i:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_resource.cpp.i
+.PHONY : qrc_resource.cpp.i
 
-qrc_main.s: qrc_main.cpp.s
+qrc_resource.s: qrc_resource.cpp.s
 
-.PHONY : qrc_main.s
+.PHONY : qrc_resource.s
 
 # target to generate assembly for a file
-qrc_main.cpp.s:
-	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_main.cpp.s
-.PHONY : qrc_main.cpp.s
+qrc_resource.cpp.s:
+	cd /home/roskinetic/dev/ros/build && $(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_resource.cpp.s
+.PHONY : qrc_resource.cpp.s
 
 src/guide/main.o: src/guide/main.cpp.o
 
@@ -594,9 +594,9 @@ help:
 	@echo "... include/guide/moc_main_window.o"
 	@echo "... include/guide/moc_main_window.i"
 	@echo "... include/guide/moc_main_window.s"
-	@echo "... qrc_main.o"
-	@echo "... qrc_main.i"
-	@echo "... qrc_main.s"
+	@echo "... qrc_resource.o"
+	@echo "... qrc_resource.i"
+	@echo "... qrc_resource.s"
 	@echo "... src/guide/main.o"
 	@echo "... src/guide/main.i"
 	@echo "... src/guide/main.s"

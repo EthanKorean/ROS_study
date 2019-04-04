@@ -250,7 +250,7 @@ monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /usr/include/x
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.o: monitor/qrc_main.cpp
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o: monitor/qrc_resource.cpp
 
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /home/roskinetic/dev/ros/src/monitor/include/guide/main_window.h
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /home/roskinetic/dev/ros/src/monitor/src/guide/main.cpp

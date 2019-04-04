@@ -64,20 +64,24 @@ monitor/include/guide/moc_main_window.cpp: /home/roskinetic/dev/ros/src/monitor/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/guide/moc_main_window.cpp"
 	cd /home/roskinetic/dev/ros/build/monitor/include/guide && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/roskinetic/dev/ros/build/monitor/include/guide/moc_main_window.cpp_parameters
 
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/main.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Blush.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Eye.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Face.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Mouth.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/GuideMenu.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/GuideMenuBtn.qml
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/airgate.png
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/help_desk.png
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/toilet.png
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/hotel.png
-monitor/qrc_main.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating qrc_main.cpp"
-	cd /home/roskinetic/dev/ros/build/monitor && /usr/lib/x86_64-linux-gnu/qt5/bin/rcc --name main --output /home/roskinetic/dev/ros/build/monitor/qrc_main.cpp /home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Blush.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Eye.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Face.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Mouth.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/GuideMenu.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/GuideMenuBtn.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/airgate.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/help_desk.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/toilet.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/hotel.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/main.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/hotel_a.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/hotel_b.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/hotel_c.png
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/TwinkleStar.qml
+monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/resource.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating qrc_resource.cpp"
+	cd /home/roskinetic/dev/ros/build/monitor && /usr/lib/x86_64-linux-gnu/qt5/bin/rcc --name resource --output /home/roskinetic/dev/ros/build/monitor/qrc_resource.cpp /home/roskinetic/dev/ros/src/monitor/resources/guide/resource.qrc
 
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: monitor/CMakeFiles/guide.dir/flags.make
 monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o: /home/roskinetic/dev/ros/src/monitor/src/guide/main.cpp
@@ -151,28 +155,28 @@ monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o.provides: monit
 monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o.provides.build: monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o
 
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.o: monitor/CMakeFiles/guide.dir/flags.make
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.o: monitor/qrc_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object monitor/CMakeFiles/guide.dir/qrc_main.cpp.o"
-	cd /home/roskinetic/dev/ros/build/monitor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/guide.dir/qrc_main.cpp.o -c /home/roskinetic/dev/ros/build/monitor/qrc_main.cpp
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o: monitor/CMakeFiles/guide.dir/flags.make
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o: monitor/qrc_resource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o"
+	cd /home/roskinetic/dev/ros/build/monitor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/guide.dir/qrc_resource.cpp.o -c /home/roskinetic/dev/ros/build/monitor/qrc_resource.cpp
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/guide.dir/qrc_main.cpp.i"
-	cd /home/roskinetic/dev/ros/build/monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roskinetic/dev/ros/build/monitor/qrc_main.cpp > CMakeFiles/guide.dir/qrc_main.cpp.i
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/guide.dir/qrc_resource.cpp.i"
+	cd /home/roskinetic/dev/ros/build/monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roskinetic/dev/ros/build/monitor/qrc_resource.cpp > CMakeFiles/guide.dir/qrc_resource.cpp.i
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/guide.dir/qrc_main.cpp.s"
-	cd /home/roskinetic/dev/ros/build/monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roskinetic/dev/ros/build/monitor/qrc_main.cpp -o CMakeFiles/guide.dir/qrc_main.cpp.s
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/guide.dir/qrc_resource.cpp.s"
+	cd /home/roskinetic/dev/ros/build/monitor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roskinetic/dev/ros/build/monitor/qrc_resource.cpp -o CMakeFiles/guide.dir/qrc_resource.cpp.s
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.requires:
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.requires:
 
-.PHONY : monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.requires
+.PHONY : monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.requires
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.provides: monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.requires
-	$(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.provides.build
-.PHONY : monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.provides
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.provides: monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.requires
+	$(MAKE) -f monitor/CMakeFiles/guide.dir/build.make monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.provides.build
+.PHONY : monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.provides
 
-monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.provides.build: monitor/CMakeFiles/guide.dir/qrc_main.cpp.o
+monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.provides.build: monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o
 
 
 monitor/CMakeFiles/guide.dir/guide_automoc.cpp.o: monitor/CMakeFiles/guide.dir/flags.make
@@ -204,7 +208,7 @@ guide_OBJECTS = \
 "CMakeFiles/guide.dir/src/guide/main.cpp.o" \
 "CMakeFiles/guide.dir/src/guide/main_window.cpp.o" \
 "CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o" \
-"CMakeFiles/guide.dir/qrc_main.cpp.o" \
+"CMakeFiles/guide.dir/qrc_resource.cpp.o" \
 "CMakeFiles/guide.dir/guide_automoc.cpp.o"
 
 # External object files for target guide
@@ -213,7 +217,7 @@ guide_EXTERNAL_OBJECTS =
 /home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o
 /home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o
 /home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o
-/home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/qrc_main.cpp.o
+/home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o
 /home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/guide_automoc.cpp.o
 /home/roskinetic/dev/ros/devel/lib/monitor/guide: monitor/CMakeFiles/guide.dir/build.make
 /home/roskinetic/dev/ros/devel/lib/monitor/guide: /usr/lib/x86_64-linux-gnu/libQt5Quick.so.5.5.1
@@ -252,7 +256,7 @@ monitor/CMakeFiles/guide.dir/build: /home/roskinetic/dev/ros/devel/lib/monitor/g
 monitor/CMakeFiles/guide.dir/requires: monitor/CMakeFiles/guide.dir/src/guide/main.cpp.o.requires
 monitor/CMakeFiles/guide.dir/requires: monitor/CMakeFiles/guide.dir/src/guide/main_window.cpp.o.requires
 monitor/CMakeFiles/guide.dir/requires: monitor/CMakeFiles/guide.dir/include/guide/moc_main_window.cpp.o.requires
-monitor/CMakeFiles/guide.dir/requires: monitor/CMakeFiles/guide.dir/qrc_main.cpp.o.requires
+monitor/CMakeFiles/guide.dir/requires: monitor/CMakeFiles/guide.dir/qrc_resource.cpp.o.requires
 monitor/CMakeFiles/guide.dir/requires: monitor/CMakeFiles/guide.dir/guide_automoc.cpp.o.requires
 
 .PHONY : monitor/CMakeFiles/guide.dir/requires
@@ -262,7 +266,7 @@ monitor/CMakeFiles/guide.dir/clean:
 .PHONY : monitor/CMakeFiles/guide.dir/clean
 
 monitor/CMakeFiles/guide.dir/depend: monitor/include/guide/moc_main_window.cpp
-monitor/CMakeFiles/guide.dir/depend: monitor/qrc_main.cpp
+monitor/CMakeFiles/guide.dir/depend: monitor/qrc_resource.cpp
 	cd /home/roskinetic/dev/ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roskinetic/dev/ros/src /home/roskinetic/dev/ros/src/monitor /home/roskinetic/dev/ros/build /home/roskinetic/dev/ros/build/monitor /home/roskinetic/dev/ros/build/monitor/CMakeFiles/guide.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : monitor/CMakeFiles/guide.dir/depend
 

@@ -30,7 +30,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/roskinetic/dev/ros/src/mobile_robot_sim/package.xml"
   "/home/roskinetic/dev/ros/src/monitor/CMakeLists.txt"
   "/home/roskinetic/dev/ros/src/monitor/package.xml"
-  "/home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc"
+  "/home/roskinetic/dev/ros/src/monitor/resources/guide/resource.qrc"
   "/home/roskinetic/dev/ros/src/opencv_tutorial/CMakeLists.txt"
   "/home/roskinetic/dev/ros/src/opencv_tutorial/package.xml"
   "/home/roskinetic/dev/ros/src/ros_qml_pack/CMakeLists.txt"

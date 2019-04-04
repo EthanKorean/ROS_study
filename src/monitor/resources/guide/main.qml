@@ -26,6 +26,7 @@ Window {
         opacity: 1
 
     }//Face
+
     Face{
         id:face
         visible: false;

@@ -28,27 +28,16 @@ namespace Main{
 
         if(ros::ok()){
             std_msgs::String target;
+            if(msg==0)return;
             switch(msg){
             case 10:
-                target.data="Hotel_Preview";
-                break;
-            case 11:
                 target.data="Hotel";
                 break;
             case 20:
-                target.data="Toilet_Preview";
-                break;
-            case 21:
                 target.data="Toilet";
                 break;
             case 30:
-                target.data="HelpDesk_Preview";
-                break;
-            case 31:
                 target.data="HelpDesk";
-                break;
-            case 9999:
-                target.data="Cancel";
                 break;
             }//end switch
             ROS_INFO("start to guide %s",target.data.c_str());

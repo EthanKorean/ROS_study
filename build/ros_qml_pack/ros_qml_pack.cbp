@@ -3044,10 +3044,10 @@
       <Unit filename="/home/roskinetic/dev/ros/src/monitor/package.xml">
           <Option virtualFolder="CMake Files\monitor\" />
       </Unit>
-      <Unit filename="/home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc">
+      <Unit filename="/home/roskinetic/dev/ros/src/monitor/resources/guide/resource.qrc">
           <Option virtualFolder="CMake Files\monitor\resources\guide\" />
       </Unit>
-      <Unit filename="/home/roskinetic/dev/ros/src/monitor/resources/guide/main.qrc">
+      <Unit filename="/home/roskinetic/dev/ros/src/monitor/resources/guide/resource.qrc">
           <Option virtualFolder="CMake Files\monitor\resources\guide\" />
       </Unit>
       <Unit filename="/home/roskinetic/dev/ros/src/ros_qml_pack/CMakeLists.txt">

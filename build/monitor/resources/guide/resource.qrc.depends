@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/qml">
-        <file>main.qml</file>
         <file>Blush.qml</file>
         <file>Eye.qml</file>
         <file>Face.qml</file>
@@ -11,5 +10,10 @@
         <file>img/help_desk.png</file>
         <file>img/toilet.png</file>
         <file>img/hotel.png</file>
+        <file>main.qml</file>
+        <file>img/hotel_a.png</file>
+        <file>img/hotel_b.png</file>
+        <file>img/hotel_c.png</file>
+        <file>TwinkleStar.qml</file>
     </qresource>
 </RCC>

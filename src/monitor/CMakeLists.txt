@@ -35,7 +35,7 @@ include_directories(
 set(MOC_HDRS include/guide/main_window.h)
 qt5_wrap_cpp(MOC_SRCS ${MOC_HDRS})
 
-set(RCC_FILES resources/guide/main.qrc)
+set(RCC_FILES resources/guide/resource.qrc)
 qt5_add_resources(RCC_SOURCES ${RCC_FILES})
 
 

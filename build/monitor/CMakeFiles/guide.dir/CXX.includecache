@@ -16,7 +16,7 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
-/home/roskinetic/dev/ros/build/monitor/qrc_main.cpp
+/home/roskinetic/dev/ros/build/monitor/qrc_resource.cpp
 
 /home/roskinetic/dev/ros/src/monitor/include/guide/main_window.h
 ros/ros.h
