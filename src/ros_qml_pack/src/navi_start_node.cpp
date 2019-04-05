@@ -1,6 +1,7 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 
+//purpose for trigger test
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "navi_start_node");

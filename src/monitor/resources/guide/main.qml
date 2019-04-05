@@ -22,15 +22,14 @@ Window {
     }//RadiaGradient
     GuideMenu{
         id:menu;
-        visible: true;
-        opacity: 1
-
+        visible: false;
+        opacity: 0
     }//Face
 
     Face{
         id:face
-        visible: false;
-        opacity: 0
+        visible: true;
+        opacity: 1
 
     }//Face
 

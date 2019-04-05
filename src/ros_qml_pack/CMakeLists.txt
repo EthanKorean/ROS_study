@@ -16,6 +16,7 @@ find_package(Qt5 REQUIRED COMPONENTS
   Core
   Qml
   Quick
+  WebKit
 )
 
 # Configuration to make Qt compiles go smoother
@@ -60,8 +61,8 @@ qt5_add_resources(RCC_SOURCES ${RCC_FILES})
 # Equivalent to doing
 # Qt += Core Qml Quick
 # In Qt .pro file
-qt5_use_modules(navi_node Core Qml Quick)
-qt5_use_modules(navi_start_node Core Qml Quick)
+qt5_use_modules(navi_node Core Qml Quick WebKit)
+qt5_use_modules(navi_start_node Core)
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(navi_node

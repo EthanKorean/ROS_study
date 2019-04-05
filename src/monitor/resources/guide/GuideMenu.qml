@@ -2,12 +2,13 @@ import QtQuick 2.0
 import QtGraphicalEffects 1.0
 
 Item {
+    property bool isHotelListActive:false;
     id:menu_frame
     width:parent.width
     height: parent.height
     y:parent.height - height;
     visible: true
-    property bool isHotelListActive:false;
+
 
     Repeater{
         model:12

@@ -1153,61 +1153,6 @@ clean: ros_qml_pack/CMakeFiles/navi_node_automoc.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory test1
-
-# Convenience name for "all" pass in the directory.
-test1/all: test1/CMakeFiles/test1.dir/all
-
-.PHONY : test1/all
-
-# Convenience name for "clean" pass in the directory.
-test1/clean: test1/CMakeFiles/test1.dir/clean
-
-.PHONY : test1/clean
-
-# Convenience name for "preinstall" pass in the directory.
-test1/preinstall:
-
-.PHONY : test1/preinstall
-
-#=============================================================================
-# Target rules for target test1/CMakeFiles/test1.dir
-
-# All Build rule for target.
-test1/CMakeFiles/test1.dir/all:
-	$(MAKE) -f test1/CMakeFiles/test1.dir/build.make test1/CMakeFiles/test1.dir/depend
-	$(MAKE) -f test1/CMakeFiles/test1.dir/build.make test1/CMakeFiles/test1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=60,61,62,63,64,65,66,67,68,69,70 "Built target test1"
-.PHONY : test1/CMakeFiles/test1.dir/all
-
-# Include target in all.
-all: test1/CMakeFiles/test1.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test1/CMakeFiles/test1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roskinetic/dev/ros/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 test1/CMakeFiles/test1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roskinetic/dev/ros/build/CMakeFiles 0
-.PHONY : test1/CMakeFiles/test1.dir/rule
-
-# Convenience name for target.
-test1: test1/CMakeFiles/test1.dir/rule
-
-.PHONY : test1
-
-# clean rule for target.
-test1/CMakeFiles/test1.dir/clean:
-	$(MAKE) -f test1/CMakeFiles/test1.dir/build.make test1/CMakeFiles/test1.dir/clean
-.PHONY : test1/CMakeFiles/test1.dir/clean
-
-# clean rule for target.
-clean: test1/CMakeFiles/test1.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory opencv_tutorial
 
 # Convenience name for "all" pass in the directory.

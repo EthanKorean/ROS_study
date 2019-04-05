@@ -35,7 +35,7 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
         sign = false;
 
         QObject::connect(ui.pushButton,SIGNAL(clicked()),this,SLOT(test()));
-        ros::init(argc, argv, "pub");
+        ros::init(argc, argv, "why");
         ros::NodeHandle nh;
         sensor = nh.advertise<std_msgs::Bool>("sensor",2);
         lbl = ui.label_4;

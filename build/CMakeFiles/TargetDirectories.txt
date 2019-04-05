@@ -63,14 +63,6 @@
 /home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/install/strip.dir
 /home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/navi_start_node_automoc.dir
 /home/roskinetic/dev/ros/build/ros_qml_pack/CMakeFiles/navi_node_automoc.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/list_install_components.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/install.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/rebuild_cache.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/edit_cache.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/test1.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/install/strip.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/install/local.dir
-/home/roskinetic/dev/ros/build/test1/CMakeFiles/test.dir
 /home/roskinetic/dev/ros/build/opencv_tutorial/CMakeFiles/install.dir
 /home/roskinetic/dev/ros/build/opencv_tutorial/CMakeFiles/test.dir
 /home/roskinetic/dev/ros/build/opencv_tutorial/CMakeFiles/install/local.dir

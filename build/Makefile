@@ -556,19 +556,6 @@ navi_node_automoc/fast:
 .PHONY : navi_node_automoc/fast
 
 #=============================================================================
-# Target rules for targets named test1
-
-# Build rule for target.
-test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test1
-.PHONY : test1
-
-# fast build rule for target.
-test1/fast:
-	$(MAKE) -f test1/CMakeFiles/test1.dir/build.make test1/CMakeFiles/test1.dir/build
-.PHONY : test1/fast
-
-#=============================================================================
 # Target rules for targets named opencv_test
 
 # Build rule for target.
@@ -1235,7 +1222,6 @@ help:
 	@echo "... navi_node"
 	@echo "... navi_start_node_automoc"
 	@echo "... navi_node_automoc"
-	@echo "... test1"
 	@echo "... opencv_test"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"

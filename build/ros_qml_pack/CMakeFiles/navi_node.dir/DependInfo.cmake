@@ -18,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_NETWORK_LIB"
   "QT_QML_LIB"
   "QT_QUICK_LIB"
+  "QT_WEBKIT_LIB"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"ros_qml_pack\""
@@ -38,6 +39,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/x86_64-linux-gnu/qt5/QtNetwork"
   "/usr/include/x86_64-linux-gnu/qt5/QtQuick"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
+  "/usr/include/x86_64-linux-gnu/qt5/QtWebKit"
   )
 
 # Targets to which this target links.

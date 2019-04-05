@@ -1,9 +1,45 @@
 <RCC>
-    <qresource prefix="/qml">
+    <qresource prefix="/">
         <file>img/background.png</file>
         <file>img/triangle_blue.png</file>
         <file>display.qml</file>
         <file>Square.qml</file>
         <file>img/navi_background.png</file>
+        <file>t_map.html</file>
+        <file>img/inAirport.png</file>
+        <file>Map.qml</file>
+        <file>img/help_desk.png</file>
+        <file>img/toilet.png</file>
+        <file>img/finish.png</file>
+        <file>img/current.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>img/available transition _low/available transition_00000.jpg</file>
+        <file>img/available transition _low/available transition_00001.jpg</file>
+        <file>img/available transition _low/available transition_00002.jpg</file>
+        <file>img/available transition _low/available transition_00003.jpg</file>
+        <file>img/available transition _low/available transition_00004.jpg</file>
+        <file>img/available transition _low/available transition_00005.jpg</file>
+        <file>img/available transition _low/available transition_00006.jpg</file>
+        <file>img/available transition _low/available transition_00007.jpg</file>
+        <file>img/available transition _low/available transition_00008.jpg</file>
+        <file>img/available transition _low/available transition_00009.jpg</file>
+        <file>img/available transition _low/available transition_00010.jpg</file>
+        <file>img/available transition _low/available transition_00011.jpg</file>
+        <file>img/available transition _low/available transition_00012.jpg</file>
+        <file>img/available transition _low/available transition_00013.jpg</file>
+        <file>img/available transition _low/available transition_00014.jpg</file>
+        <file>img/available transition _low/available transition_00015.jpg</file>
+        <file>img/available transition _low/available transition_00016.jpg</file>
+        <file>img/available transition _low/available transition_00017.jpg</file>
+        <file>img/available transition _low/available transition_00018.jpg</file>
+        <file>img/available transition _low/available transition_00019.jpg</file>
+        <file>img/available transition _low/available transition_00020.jpg</file>
+        <file>img/available transition _low/available transition_00021.jpg</file>
+        <file>img/available transition _low/available transition_00022.jpg</file>
+        <file>img/available transition _low/available transition_00023.jpg</file>
+        <file>img/available transition _low/available transition_00024.jpg</file>
+        <file>img/available transition _low/available transition_00025.jpg</file>
+        <file>img/available transition _low/available transition_00026.jpg</file>
     </qresource>
 </RCC>

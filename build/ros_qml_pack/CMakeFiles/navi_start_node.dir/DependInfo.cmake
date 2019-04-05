@@ -14,10 +14,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
-  "QT_GUI_LIB"
-  "QT_NETWORK_LIB"
-  "QT_QML_LIB"
-  "QT_QUICK_LIB"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"ros_qml_pack\""
@@ -34,10 +30,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtCore"
   "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"
-  "/usr/include/x86_64-linux-gnu/qt5/QtQml"
-  "/usr/include/x86_64-linux-gnu/qt5/QtNetwork"
-  "/usr/include/x86_64-linux-gnu/qt5/QtQuick"
-  "/usr/include/x86_64-linux-gnu/qt5/QtGui"
   )
 
 # Targets to which this target links.

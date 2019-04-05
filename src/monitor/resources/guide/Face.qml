@@ -3,6 +3,8 @@ import QtQuick.Controls 1.2
 import QtGraphicalEffects 1.0
 
 Rectangle {
+    property int eyeGap:50;
+    property real yGap:0
     id:face
     width:parent.width
     height:parent.height
@@ -10,8 +12,7 @@ Rectangle {
     opacity:0.2;
     //color:Qt.rgba(1,0.87,0.69,1);
     //color:Qt.rgba(0.98,0.92,0.77,0.9);
-    property int eyeGap:50;
-    property real yGap:0
+
 
     RadialGradient{
         anchors.fill:parent

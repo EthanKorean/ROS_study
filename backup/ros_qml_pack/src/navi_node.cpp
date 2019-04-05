@@ -19,9 +19,9 @@ int main(int argc, char **argv)
   QGuiApplication app(argc, argv);
   QMLMediator mediate(&app);
     ros::Subscriber sub = nh.subscribe("target", 1000, &QMLMediator::addString, &mediate);
+    ros::Publisher pub = nh.advertise<std_msgs::Bool>("finish_navi", 2);
 
-   mediate.setnode(nh);
-
+  mediate.setPub(pub);
   QFutureWatcher<void> rosThread;
   rosThread.setFuture(QtConcurrent::run(&ros::spin));
   QObject::connect(&rosThread, &QFutureWatcher<void>::finished, &app, &QCoreApplication::quit);

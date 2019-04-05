@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 
   QQmlApplicationEngine engine(&app);
   engine.rootContext()->setContextProperty("mediator", &mediate);
-  engine.load(QUrl("qrc:///qml/display.qml"));
+  engine.load(QUrl("qrc:/display.qml"));
 
   return app.exec();
 }

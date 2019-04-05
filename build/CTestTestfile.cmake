@@ -7,7 +7,6 @@
 subdirs(gmock)
 subdirs(monitor)
 subdirs(ros_qml_pack)
-subdirs(test1)
 subdirs(opencv_tutorial)
 subdirs(sensor)
 subdirs(mobile_robot_sim)
