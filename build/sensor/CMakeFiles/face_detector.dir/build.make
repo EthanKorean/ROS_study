@@ -64,9 +64,9 @@ sensor/include/face_detector/moc_sub_node_thread.cpp: /home/roskinetic/dev/ros/s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/face_detector/moc_sub_node_thread.cpp"
 	cd /home/roskinetic/dev/ros/build/sensor/include/face_detector && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_sub_node_thread.cpp_parameters
 
-sensor/include/face_detector/moc_camera.cpp: /home/roskinetic/dev/ros/src/sensor/include/face_detector/camera.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/face_detector/moc_camera.cpp"
-	cd /home/roskinetic/dev/ros/build/sensor/include/face_detector && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_camera.cpp_parameters
+sensor/include/face_detector/moc_face_detector.cpp: /home/roskinetic/dev/ros/src/sensor/include/face_detector/face_detector.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/face_detector/moc_face_detector.cpp"
+	cd /home/roskinetic/dev/ros/build/sensor/include/face_detector && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_face_detector.cpp_parameters
 
 sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
 sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.o: /home/roskinetic/dev/ros/src/sensor/src/face_detector/sub_node_thread.cpp
@@ -116,28 +116,28 @@ sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o.provides: senso
 sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o.provides.build: sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o
 
 
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o: /home/roskinetic/dev/ros/src/sensor/src/face_detector/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o"
-	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o -c /home/roskinetic/dev/ros/src/sensor/src/face_detector/camera.cpp
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o: /home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o"
+	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o -c /home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp
 
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.i"
-	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roskinetic/dev/ros/src/sensor/src/face_detector/camera.cpp > CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.i
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.i"
+	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp > CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.i
 
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.s"
-	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roskinetic/dev/ros/src/sensor/src/face_detector/camera.cpp -o CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.s
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.s"
+	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp -o CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.s
 
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.requires:
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.requires:
 
-.PHONY : sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.requires
+.PHONY : sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.requires
 
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.provides: sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.requires
-	$(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.provides.build
-.PHONY : sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.provides
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.provides: sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.requires
+	$(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.provides.build
+.PHONY : sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.provides
 
-sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.provides.build: sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o
+sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.provides.build: sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o
 
 
 sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
@@ -164,28 +164,28 @@ sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cp
 sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o.provides.build: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o
 
 
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o: sensor/include/face_detector/moc_camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o"
-	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o -c /home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_camera.cpp
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o: sensor/include/face_detector/moc_face_detector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roskinetic/dev/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o"
+	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o -c /home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_face_detector.cpp
 
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.i"
-	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_camera.cpp > CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.i
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.i"
+	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_face_detector.cpp > CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.i
 
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.s"
-	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_camera.cpp -o CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.s
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.s"
+	cd /home/roskinetic/dev/ros/build/sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_face_detector.cpp -o CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.s
 
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.requires:
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.requires:
 
-.PHONY : sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.requires
+.PHONY : sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.requires
 
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.provides: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.requires
-	$(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.provides.build
-.PHONY : sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.provides
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.provides: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.requires
+	$(MAKE) -f sensor/CMakeFiles/face_detector.dir/build.make sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.provides.build
+.PHONY : sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.provides
 
-sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.provides.build: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o
+sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.provides.build: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o
 
 
 sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.o: sensor/CMakeFiles/face_detector.dir/flags.make
@@ -216,9 +216,9 @@ sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.o.provides.build: 
 face_detector_OBJECTS = \
 "CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.o" \
 "CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o" \
-"CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o" \
+"CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o" \
 "CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o" \
-"CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o" \
+"CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o" \
 "CMakeFiles/face_detector.dir/face_detector_automoc.cpp.o"
 
 # External object files for target face_detector
@@ -226,9 +226,9 @@ face_detector_EXTERNAL_OBJECTS =
 
 /home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.o
 /home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o
-/home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o
+/home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o
 /home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o
-/home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o
+/home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o
 /home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.o
 /home/roskinetic/dev/ros/devel/lib/sensor/face_detector: sensor/CMakeFiles/face_detector.dir/build.make
 /home/roskinetic/dev/ros/devel/lib/sensor/face_detector: /usr/lib/x86_64-linux-gnu/libQt5Quick.so.5.5.1
@@ -326,9 +326,9 @@ sensor/CMakeFiles/face_detector.dir/build: /home/roskinetic/dev/ros/devel/lib/se
 
 sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/src/face_detector/sub_node_thread.cpp.o.requires
 sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/src/face_detector/main.cpp.o.requires
-sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/src/face_detector/camera.cpp.o.requires
+sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/src/face_detector/face_detector.cpp.o.requires
 sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_sub_node_thread.cpp.o.requires
-sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_camera.cpp.o.requires
+sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/include/face_detector/moc_face_detector.cpp.o.requires
 sensor/CMakeFiles/face_detector.dir/requires: sensor/CMakeFiles/face_detector.dir/face_detector_automoc.cpp.o.requires
 
 .PHONY : sensor/CMakeFiles/face_detector.dir/requires
@@ -338,7 +338,7 @@ sensor/CMakeFiles/face_detector.dir/clean:
 .PHONY : sensor/CMakeFiles/face_detector.dir/clean
 
 sensor/CMakeFiles/face_detector.dir/depend: sensor/include/face_detector/moc_sub_node_thread.cpp
-sensor/CMakeFiles/face_detector.dir/depend: sensor/include/face_detector/moc_camera.cpp
+sensor/CMakeFiles/face_detector.dir/depend: sensor/include/face_detector/moc_face_detector.cpp
 	cd /home/roskinetic/dev/ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roskinetic/dev/ros/src /home/roskinetic/dev/ros/src/sensor /home/roskinetic/dev/ros/build /home/roskinetic/dev/ros/build/sensor /home/roskinetic/dev/ros/build/sensor/CMakeFiles/face_detector.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor/CMakeFiles/face_detector.dir/depend
 

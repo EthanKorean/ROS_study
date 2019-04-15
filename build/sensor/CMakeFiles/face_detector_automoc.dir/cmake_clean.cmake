@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "face_detector_automoc.cpp"
-  "face_recog_sensor_automoc.cpp"
   "CMakeFiles/face_detector_automoc"
 )
 

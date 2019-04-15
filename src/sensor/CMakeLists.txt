@@ -57,21 +57,3 @@ target_link_libraries(face_detector
   )
 
 ############################## end set to face_detector Node  ##############################
-
-############################## start set to face_sensor Node  ##############################
-set(FACE_SENSOR_MOC_HDRS include/face_recog/main_window.h)
-qt5_wrap_cpp(FACE_SENSOR_MOC_SRCS ${FACE_SENSOR_MOC_HDRS})
-
-set(FACE_SENSOR_RCC_FILES resources/face_recog/main.qrc)
-qt5_add_resources(FACE_SENSOR_RCC_SOURCES ${FACE_SENSOR_RCC_FILES})
-
-
-file(GLOB_RECURSE FACE_SENSOR_QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/face_recog/*.cpp)
-
-add_executable(face_recog_sensor
-       ${FACE_SENSOR_QT_SOURCES}
-       ${FACE_SENSOR_MOC_SRCS}
-       ${FACE_SENSOR_RCC_SOURCES})
-qt5_use_modules(face_recog_sensor Core Qml Quick)
-target_link_libraries(face_recog_sensor ${catkin_LIBRARIES})
-############################## end set to face_sensor Node  ##############################

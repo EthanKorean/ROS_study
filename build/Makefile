@@ -712,19 +712,6 @@ face_detector/fast:
 .PHONY : face_detector/fast
 
 #=============================================================================
-# Target rules for targets named face_recog_sensor
-
-# Build rule for target.
-face_recog_sensor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 face_recog_sensor
-.PHONY : face_recog_sensor
-
-# fast build rule for target.
-face_recog_sensor/fast:
-	$(MAKE) -f sensor/CMakeFiles/face_recog_sensor.dir/build.make sensor/CMakeFiles/face_recog_sensor.dir/build
-.PHONY : face_recog_sensor/fast
-
-#=============================================================================
 # Target rules for targets named face_detector_automoc
 
 # Build rule for target.
@@ -736,19 +723,6 @@ face_detector_automoc: cmake_check_build_system
 face_detector_automoc/fast:
 	$(MAKE) -f sensor/CMakeFiles/face_detector_automoc.dir/build.make sensor/CMakeFiles/face_detector_automoc.dir/build
 .PHONY : face_detector_automoc/fast
-
-#=============================================================================
-# Target rules for targets named face_recog_sensor_automoc
-
-# Build rule for target.
-face_recog_sensor_automoc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 face_recog_sensor_automoc
-.PHONY : face_recog_sensor_automoc
-
-# fast build rule for target.
-face_recog_sensor_automoc/fast:
-	$(MAKE) -f sensor/CMakeFiles/face_recog_sensor_automoc.dir/build.make sensor/CMakeFiles/face_recog_sensor_automoc.dir/build
-.PHONY : face_recog_sensor_automoc/fast
 
 #=============================================================================
 # Target rules for targets named nav_msgs_generate_messages_py
@@ -1234,9 +1208,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... face_detector"
-	@echo "... face_recog_sensor"
 	@echo "... face_detector_automoc"
-	@echo "... face_recog_sensor_automoc"
 	@echo "... nav_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_py"

@@ -47,15 +47,6 @@ Rectangle {
         y : rightEye.y+rightEye.height+yGap
     }//Blush:rightBrush
 
-    Mouth{
-        id : mouth
-        visible:true;
-        x : leftEye.x + leftEye.width/2
-        y : leftBrush.y + leftBrush.height/2
-        width: eyeGap*2+leftEye.width
-    }//Mouth:mouth
-
-
     /////////////////////////////////////////////////////
     function isRecognized(flag){
         if(flag){

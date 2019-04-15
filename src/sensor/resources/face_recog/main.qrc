@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/qml">
-        <file>main.qml</file>
-        <file>SensorBtn.qml</file>
-        <file>img/button.png</file>
-    </qresource>
-</RCC>

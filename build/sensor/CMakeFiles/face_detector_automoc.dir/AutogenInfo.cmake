@@ -1,4 +1,4 @@
-set(AM_SOURCES "/home/roskinetic/dev/ros/src/sensor/src/face_detector/sub_node_thread.cpp;/home/roskinetic/dev/ros/src/sensor/src/face_detector/main.cpp;/home/roskinetic/dev/ros/src/sensor/src/face_detector/camera.cpp" )
+set(AM_SOURCES "/home/roskinetic/dev/ros/src/sensor/src/face_detector/sub_node_thread.cpp;/home/roskinetic/dev/ros/src/sensor/src/face_detector/main.cpp;/home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp" )
 set(AM_RCC_SOURCES  )
 set(AM_RCC_INPUTS )
 set(AM_SKIP_MOC "" )

@@ -8,9 +8,9 @@
 
 /home/roskinetic/dev/ros/build/sensor/face_detector_automoc.cpp
 
-/home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_camera.cpp
-../../../../src/sensor/include/face_detector/camera.hpp
-/home/roskinetic/dev/ros/src/sensor/include/face_detector/camera.hpp
+/home/roskinetic/dev/ros/build/sensor/include/face_detector/moc_face_detector.cpp
+../../../../src/sensor/include/face_detector/face_detector.hpp
+/home/roskinetic/dev/ros/src/sensor/include/face_detector/face_detector.hpp
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
@@ -24,7 +24,7 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
-/home/roskinetic/dev/ros/src/sensor/include/face_detector/camera.hpp
+/home/roskinetic/dev/ros/src/sensor/include/face_detector/face_detector.hpp
 ros/ros.h
 /home/roskinetic/dev/ros/src/sensor/include/face_detector/ros/ros.h
 QThread
@@ -42,7 +42,7 @@ ros/ros.h
 std_msgs/Bool.h
 -
 
-/home/roskinetic/dev/ros/src/sensor/src/face_detector/camera.cpp
+/home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp
 ../../include/face_detector/camera.hpp
 /home/roskinetic/dev/ros/src/sensor/include/face_detector/camera.hpp
 cv_bridge/cv_bridge.h

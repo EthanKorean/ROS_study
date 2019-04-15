@@ -84,14 +84,12 @@
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/list_install_components.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/install.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/rebuild_cache.dir
-/home/roskinetic/dev/ros/build/sensor/CMakeFiles/test.dir
-/home/roskinetic/dev/ros/build/sensor/CMakeFiles/face_detector.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/edit_cache.dir
-/home/roskinetic/dev/ros/build/sensor/CMakeFiles/face_recog_sensor.dir
+/home/roskinetic/dev/ros/build/sensor/CMakeFiles/face_detector.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/install/strip.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/install/local.dir
+/home/roskinetic/dev/ros/build/sensor/CMakeFiles/test.dir
 /home/roskinetic/dev/ros/build/sensor/CMakeFiles/face_detector_automoc.dir
-/home/roskinetic/dev/ros/build/sensor/CMakeFiles/face_recog_sensor_automoc.dir
 /home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/list_install_components.dir
 /home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/test.dir
 /home/roskinetic/dev/ros/build/mobile_robot_sim/CMakeFiles/install/local.dir
