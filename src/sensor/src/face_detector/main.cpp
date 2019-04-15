@@ -1,4 +1,4 @@
-#include "../../include/face_detector/camera.hpp"
+#include "../../include/face_detector/face_detector.hpp"
 
 
 int main(int argc,char **argv){

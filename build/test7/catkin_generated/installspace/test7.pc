@@ -1,8 +1,0 @@
-prefix=/home/roskinetic/dev/ros/install
-
-Name: test7
-Description: Description of test7
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: roscpp std_msgs

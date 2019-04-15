@@ -1,8 +1,0 @@
-prefix=/home/roskinetic/dev/ros/install
-
-Name: opencv_example
-Description: Description of opencv_example
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: roscpp std_msgs message_runtime cv_bridge sensor_msgs

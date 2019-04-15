@@ -1,8 +1,0 @@
-prefix=/home/roskinetic/dev/ros/install
-
-Name: test6
-Description: Description of test6
-Version: 0.1.0
-Cflags: 
-Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: 

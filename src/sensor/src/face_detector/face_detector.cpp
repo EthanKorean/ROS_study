@@ -1,4 +1,4 @@
-#include "../../include/face_detector/camera.hpp"
+#include "../../include/face_detector/face_detector.hpp"
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 #include <iostream>

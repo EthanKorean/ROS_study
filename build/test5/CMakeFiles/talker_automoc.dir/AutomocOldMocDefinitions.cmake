@@ -1,1 +1,0 @@
-set(AM_OLD_COMPILE_SETTINGS "ROSCONSOLE_BACKEND_LOG4CXX;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"test5\" ~~~ /home/roskinetic/dev/ros/build/test5;/home/roskinetic/dev/ros/src/test5;/home/roskinetic/dev/ros/build;/home/roskinetic/dev/ros/src/test5/include;/opt/ros/kinetic/include;/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include ~~~  ~~~ FALSE ~~~ ")

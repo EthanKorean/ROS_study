@@ -40,7 +40,7 @@ include_directories(
   ${OpenCV_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
 )
-############################## start set to face_detector Node  ##############################
+
 
 file(GLOB_RECURSE FACE_DETECTOR_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/face_detector/*.cpp)
 file(GLOB_RECURSE FACE_DETECTOR_MOC_HDRS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/face_detector/*.hpp)
@@ -56,4 +56,4 @@ target_link_libraries(face_detector
     ${catkin_LIBRARIES}
   )
 
-############################## end set to face_detector Node  ##############################
+

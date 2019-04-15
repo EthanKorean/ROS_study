@@ -1,8 +1,0 @@
-prefix=/home/roskinetic/dev/ros/install
-
-Name: sensor_publisher
-Description: Description of sensor_publisher
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: roscpp std_msgs

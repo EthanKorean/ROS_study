@@ -1,8 +1,0 @@
-prefix=/home/roskinetic/dev/ros/install
-
-Name: rosgui
-Description: Description of rosgui
-Version: 0.1.0
-Cflags: 
-Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: 

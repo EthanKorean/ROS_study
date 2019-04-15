@@ -1,8 +1,0 @@
-prefix=/home/roskinetic/dev/ros/install
-
-Name: opencv_tutorial
-Description: Description of opencv_tutorial
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/roskinetic/dev/ros/install/lib 
-Requires: 

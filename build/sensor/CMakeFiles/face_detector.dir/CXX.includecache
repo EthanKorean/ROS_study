@@ -43,8 +43,8 @@ std_msgs/Bool.h
 -
 
 /home/roskinetic/dev/ros/src/sensor/src/face_detector/face_detector.cpp
-../../include/face_detector/camera.hpp
-/home/roskinetic/dev/ros/src/sensor/include/face_detector/camera.hpp
+../../include/face_detector/face_detector.hpp
+/home/roskinetic/dev/ros/src/sensor/include/face_detector/face_detector.hpp
 cv_bridge/cv_bridge.h
 -
 opencv2/opencv.hpp
@@ -57,8 +57,8 @@ thread
 -
 
 /home/roskinetic/dev/ros/src/sensor/src/face_detector/main.cpp
-../../include/face_detector/camera.hpp
-/home/roskinetic/dev/ros/src/sensor/include/face_detector/camera.hpp
+../../include/face_detector/face_detector.hpp
+/home/roskinetic/dev/ros/src/sensor/include/face_detector/face_detector.hpp
 
 /home/roskinetic/dev/ros/src/sensor/src/face_detector/sub_node_thread.cpp
 ../../include/face_detector/sub_node_thread.hpp
