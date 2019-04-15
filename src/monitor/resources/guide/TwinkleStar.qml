@@ -9,7 +9,7 @@ Item{
     property real pauseDuration:1500
     property real timerStdInterval:brightDuration+darkDuration+pauseDuration
     property real randomInterval:Math.ceil(Math.random()*(timerStdInterval));
-    id:twinkle_star
+    id:twinkleStar
     visible: true
     x:starX
     y:starY
@@ -56,7 +56,7 @@ Item{
     SequentialAnimation{
         id:twinkle
         PropertyAnimation {
-            targets: twinkle_star
+            targets: twinkleStar
             properties: "opacity"
             duration: brightDuration
             to:1
@@ -67,7 +67,7 @@ Item{
         }//PauseAnimation
 
         PropertyAnimation {
-            targets: twinkle_star
+            targets: twinkleStar
             properties: "opacity"
             duration: darkDuration
             to:0

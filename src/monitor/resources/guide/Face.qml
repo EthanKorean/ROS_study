@@ -18,7 +18,7 @@ Rectangle {
         anchors.fill:parent
         gradient:Gradient{
             GradientStop{position:0.4; color:Qt.rgba(0,0,0.100,0.86)}
-            GradientStop{id : face_frame; position:0.5; color:Qt.rgba(0,0,0.250,0.9)}
+            GradientStop{id : faceFrame; position:0.5; color:Qt.rgba(0,0,0.250,0.9)}
             GradientStop{position:0.7; color:window.color}
         }//Gradient
     }//RadiaGradient
@@ -61,15 +61,15 @@ Rectangle {
         if(flag){
             //face detect succes
             ready.running=false;
-            ready_frame.running=false;
+            readyFrame.running=false;
             welcome.running=true;
-            welcome_frame.running=true;
+            welcomeFrame.running=true;
         }else{
             //face detect fail
             welcome.running=false;
-            welcome_frame.running=false;
+            welcomeFrame.running=false;
             ready.running       =true;
-            ready_frame.running =true;
+            readyFrame.running =true;
             //face.scale=1;
         }//end else
     }//welcome
@@ -100,8 +100,8 @@ Rectangle {
 /////////////////////////// Face Detect Fail
 //////////////////////////////////////////////////////
     PropertyAnimation{
-        id: welcome_frame
-        targets: face_frame
+        id: welcomeFrame
+        targets: faceFrame
         properties: "color"
         duration: 1500
         to: Qt.rgba(0,0.25,0.25,0.6)
@@ -109,8 +109,8 @@ Rectangle {
     }//PropertyAnimation
 
     PropertyAnimation{
-        id: ready_frame
-        targets: face_frame
+        id: readyFrame
+        targets: faceFrame
         properties: "color"
         duration: 1000
         to: Qt.rgba(0,0,0.250,0.9)

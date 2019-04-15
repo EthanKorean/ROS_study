@@ -3,7 +3,6 @@
         <file>Blush.qml</file>
         <file>Eye.qml</file>
         <file>Face.qml</file>
-        <file>Mouth.qml</file>
         <file>GuideMenu.qml</file>
         <file>GuideMenuBtn.qml</file>
         <file>img/airgate.png</file>

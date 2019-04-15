@@ -20,24 +20,24 @@ Item {
         anchors.verticalCenter: parent.verticalCenter;
 
         GuideMenuBtn{
-            id:hotel_list_btn
+            id:hotelListBtn
             txt:"Hotels"
             img:"img/hotel.png"
             mouseId:mouseArea
             MouseArea{
                 id:mouseArea
-                anchors.fill: hotel_list_btn
+                anchors.fill: hotelListBtn
                 cursorShape : Qt.PointingHandCursor
                 hoverEnabled: true
                 onClicked: {
                     if(isHotelListActive){
-                        open_list.running=false;
-                        close_list.running=true;
+                        openList.running=false;
+                        closeList.running=true;
 
                     }else{
 
-                        open_list.running=true;
-                        close_list.running=false;
+                        openList.running=true;
+                        closeList.running=false;
                     }//end else
                     isHotelListActive=!isHotelListActive;
                 }//onClicked
@@ -45,18 +45,18 @@ Item {
         }//GuideMenuBtn
 
         Row{
-            width:hotel_list_btn.width
+            width:hotelListBtn.width
 
             Rectangle{
-                id:left_margin;
-                width: hotel_list_btn.width*4/20
-                height:list_penel.height
+                id:leftMargin;
+                width: hotelListBtn.width*4/20
+                height:listPenel.height
                 opacity: 0;
             }//Rectangle
 
             Rectangle{
-                id:list_penel;
-                width:hotel_list_btn.width*29/40
+                id:listPenel;
+                width:hotelListBtn.width*29/40
                 height:0
                 color:Qt.rgba(1,1,1,0.08)
                 radius: 5
@@ -69,7 +69,7 @@ Item {
                         txt:"Hotel A"
                         img:"img/hotel_a.png"
                         msg:10;
-                        width:list_penel.width*2/3
+                        width:listPenel.width*2/3
                         height:40
                     }//GuideMenuBtn
                     GuideMenuBtn{
@@ -77,7 +77,7 @@ Item {
                         visible:isHotelListActive;
                         txt:"Hotel B"
                         img:"img/hotel_b.png"
-                        width:list_penel.width*2/3
+                        width:listPenel.width*2/3
                         height:40
                     }//GuideMenuBtn
                     GuideMenuBtn{
@@ -85,7 +85,7 @@ Item {
                         visible:isHotelListActive;
                         txt:"Hotel C"
                         img:"img/hotel_c.png"
-                        width:list_penel.width*2/3
+                        width:listPenel.width*2/3
                         height:40
                     }//GuideMenuBtn
                 }//Column
@@ -103,8 +103,8 @@ Item {
                 cursorShape : Qt.PointingHandCursor
                 hoverEnabled: true
                 onClicked: {
-                  open_list.running=false;
-                  close_list.running=true;
+                  openList.running=false;
+                  closeList.running=true;
                   isHotelListActive=false;
                   mw.startGuide(parent.msg)
                 }//onClicked
@@ -122,8 +122,8 @@ Item {
                 cursorShape : Qt.PointingHandCursor
                 hoverEnabled: true
                 onClicked: {
-                    open_list.running=false;
-                    close_list.running=true;
+                    openList.running=false;
+                    closeList.running=true;
                     isHotelListActive=false;
                     mw.startGuide(parent.msg)
                 }//onClicked
@@ -135,21 +135,21 @@ Item {
 
 
     PropertyAnimation {
-        id:open_list
-        targets: list_penel
+        id:openList
+        targets: listPenel
         properties: "height"
         duration: 100
         to:140
         running: false;
-    }//PropertyAnimation::open_list
+    }//PropertyAnimation::openList
 
     PropertyAnimation {
-        id:close_list
-        targets: list_penel
+        id:closeList
+        targets: listPenel
         properties: "height"
         duration: 100
         to:0
         running: false;
-    }//PropertyAnimation::close_list
+    }//PropertyAnimation::closeList
 
 }//Rectange

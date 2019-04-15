@@ -46,7 +46,7 @@ Rectangle {
         }//RadiaGradient
         SequentialAnimation{
         running: true;
-        id:blink_in;
+        id:blinkIn;
             PropertyAnimation {
                 target: inEye
                 properties: "width,height"
@@ -63,7 +63,7 @@ Rectangle {
     }//Rectangle
 
     SequentialAnimation{
-        id:blink_out
+        id:blinkOut
         running: true;
         PropertyAnimation {
             target: outEye
@@ -84,8 +84,8 @@ Rectangle {
         running:true;
         repeat: true
         onTriggered:{
-            blink_out.running =true
-            blink_in.running  =true
+            blinkOut.running =true
+            blinkIn.running  =true
         }//onTriggered
     }//Timer
 }//Rectangle

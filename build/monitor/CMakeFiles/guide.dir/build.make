@@ -67,7 +67,6 @@ monitor/include/guide/moc_main_window.cpp: /home/roskinetic/dev/ros/src/monitor/
 monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Blush.qml
 monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Eye.qml
 monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Face.qml
-monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/Mouth.qml
 monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/GuideMenu.qml
 monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/GuideMenuBtn.qml
 monitor/qrc_resource.cpp: /home/roskinetic/dev/ros/src/monitor/resources/guide/img/airgate.png

@@ -11,11 +11,11 @@ Item{
     x:parent.width/2-width/2
     width: 250
     height:70;
-    id:btn_frame
+    id:btnFrame
     Column{
         Rectangle{
-            width: btn_frame.width
-            height: btn_frame.height
+            width: btnFrame.width
+            height: btnFrame.height
             color: Qt.rgba(1,1,1,0)
             Rectangle{
                 id:inner
