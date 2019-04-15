@@ -16,8 +16,6 @@ public:
     MainWindow();
     ~MainWindow();
     Q_INVOKABLE void startGuide(int msg);
-    void setPub(ros::Publisher pub);
-    void setSub(ros::Subscriber sub);
     void receiveFaceSensMsg(const std_msgs::Bool::ConstPtr& msg);
 
 signals:
@@ -26,7 +24,7 @@ signals:
 private:
     ros::NodeHandle mNh;
     ros::Subscriber mSub;
-    ros::Publisher mPub;
+    ros::Publisher  mPub;
 
 };//class
 

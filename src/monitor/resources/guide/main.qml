@@ -20,19 +20,18 @@ Window {
             GradientStop{position:0.8; color:Qt.rgba(0,0,0.1,0.86)}
         }//Gradient
     }//RadiaGradient
+
     GuideMenu{
         id:menu;
         visible: false;
         opacity: 0
-    }//Face
+    }//Menu
 
     Face{
         id:face
         visible: true;
         opacity: 1
-
     }//Face
-
 
     Connections{
         target: mw
@@ -41,10 +40,11 @@ Window {
             sensOff.running=false;
             sensOn.running=false;
             if(flag){
+                //Face detect success
                 menu.visible=true
                 sensOn.running=true;
             }else{
-
+                //Face detect fail
                 sensOff.running=true;
                 menu.visible=false;
             }//else
@@ -52,7 +52,7 @@ Window {
     }//Connections
 
 //////////////////////////////////////////////////////
-/////////////////////////// ON
+/////////////////////////// Face Detect Success
 //////////////////////////////////////////////////////
     Timer{
         id:sensOn
@@ -60,17 +60,15 @@ Window {
         repeat: false;
         running:false;
         onTriggered: {
-
-
             faceOpaUp.running=false;
             hideMenu.running=false;
             /////////////////////////////////
-
             showMenu.running=true;
 
             faceOpaDown.running=true;
-        }
-    }
+        }//onTriggered
+    }//Timer:sensOn
+
     PropertyAnimation{
         id: showMenu
         target: menu
@@ -88,11 +86,11 @@ Window {
         duration: 500
         to:0
         running: false;
-    }
+    }//NumberAn
 
 
 //////////////////////////////////////////////////////
-/////////////////////////// OFF
+/////////////////////////// Face Detect Fail
 //////////////////////////////////////////////////////
     Timer{
         id:sensOff
@@ -101,14 +99,11 @@ Window {
         running:false;
         onTriggered: {
             showMenu.running=false;
-
             /////////////////////////////////
-
             faceOpaUp.running=true;
             hideMenu.running=true;
-
-        }
-    }
+        }//onTriggered
+    }//Timer
 
     NumberAnimation {
         id: faceOpaUp
@@ -117,7 +112,8 @@ Window {
         duration: 500
         to:1
         running: false;
-    }
+    }//NumberAnimation:faceOpaup
+
     PropertyAnimation{
         id: hideMenu
         target: menu
@@ -125,6 +121,6 @@ Window {
         duration: 400
         to:0.0
         running:false
-    }//PropertyAnimation
+    }//PropertyAnimation:hideMenu
 
 }//Window

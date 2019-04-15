@@ -20,7 +20,6 @@ int main(int argc,char **argv){
     ros::init(argc,argv,"guide");
     QGuiApplication app(argc,argv); 
     Main::MainWindow mw;
-
     QQmlApplicationEngine engine(&app);
     QFutureWatcher<void> rosThread;
     rosThread.setFuture(QtConcurrent::run(&ros::spin));

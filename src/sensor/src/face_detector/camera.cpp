@@ -25,11 +25,11 @@ namespace FaceDetector{
         // face detection configuration
         cv::CascadeClassifier face_classifier;
         face_classifier.load( "/opt/opencv/data/haarcascades/haarcascade_frontalface_default.xml" );
+        //face_classifier.load( "haarcascade_frontalface_default.xml" );
         cv::Mat frame;
         start();
 
         while(true){
-
             bool frame_valid = true;
             try {
                 // get a new frame from webcam
@@ -59,7 +59,7 @@ namespace FaceDetector{
                         cv::Point tr( faces[i].x, faces[i].y );
                         cv::rectangle( frame, lb, tr, cv::Scalar( 0, 255, 0 ), 3, 4, 0 );
                         mDetectCnt++;
-                        std::cout << "face " << std::endl;
+
                     }//end for
                     // print the output
                     cv::imshow( "face_detector", frame );
@@ -68,11 +68,8 @@ namespace FaceDetector{
                 }//end catch
             }//end if
             if ( cv::waitKey(30) >= 0 ) break;
-            std::cout << "-----------------Round...--------------- " << std::endl;
-
          }//end while
     }//FaceDetector
-
 
     FaceDetector::~FaceDetector(){
         this->quit();
@@ -89,7 +86,7 @@ namespace FaceDetector{
         SubNodeThread subNode(mNh,mPub,&mChangeStatus);
         subNode.start();
         while(true){
-            msleep(3500);
+            msleep(4000);
             if(mDetectCnt>2){
                 faceDetectFlag=true;
             }else{
@@ -102,13 +99,13 @@ namespace FaceDetector{
                 if(ros::ok()){
                     mPub.publish(msg);
                     ros::spinOnce();
-                    ROS_INFO("published info ->%s", msg.data?"true":"false");
+                    ROS_INFO("published info ->%s", msg.data? "true":"false");
                 }else{
                     std::cout << "ROS is not working... "<< std::endl;
                 }//end else
             }//end if
             mDetectCnt=0;
-            std::cout << "checked" << std::endl;
+
         }//end while
     }//run
 }//namespace;

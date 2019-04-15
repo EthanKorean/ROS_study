@@ -1,6 +1,9 @@
 import QtQuick 2.0
 import QtGraphicalEffects 1.0
 
+/**
+ * Brush of Eye
+*/
 
 Rectangle {
     property real openEye:400

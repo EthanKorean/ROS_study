@@ -16,6 +16,7 @@ Item{
     width: 7
     height: 7
     opacity:0
+
     RadialGradient{
         anchors.fill:parent
         gradient: Gradient{
@@ -63,7 +64,8 @@ Item{
 
         PauseAnimation {
             duration: pauseDuration
-        }
+        }//PauseAnimation
+
         PropertyAnimation {
             targets: twinkle_star
             properties: "opacity"

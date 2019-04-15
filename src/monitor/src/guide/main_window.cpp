@@ -45,11 +45,4 @@ namespace Main{
             ros::spinOnce();
         }//end if
     }//slotsGuide
-
-    void MainWindow::setPub(ros::Publisher pub){
-        this->mPub=pub;
-    }
-    void MainWindow::setSub(ros::Subscriber sub){
-        this->mSub=sub;
-    }
 }//namespace

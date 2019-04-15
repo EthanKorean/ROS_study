@@ -59,11 +59,13 @@ Rectangle {
     /////////////////////////////////////////////////////
     function isRecognized(flag){
         if(flag){
+            //face detect succes
             ready.running=false;
             ready_frame.running=false;
             welcome.running=true;
             welcome_frame.running=true;
         }else{
+            //face detect fail
             welcome.running=false;
             welcome_frame.running=false;
             ready.running       =true;
@@ -71,6 +73,10 @@ Rectangle {
             //face.scale=1;
         }//end else
     }//welcome
+
+//////////////////////////////////////////////////////
+/////////////////////////// Face Detect Success
+//////////////////////////////////////////////////////
 
     PropertyAnimation{
         id: welcome
@@ -90,6 +96,9 @@ Rectangle {
         running:false
     }//PropertyAnimation
 
+//////////////////////////////////////////////////////
+/////////////////////////// Face Detect Fail
+//////////////////////////////////////////////////////
     PropertyAnimation{
         id: welcome_frame
         targets: face_frame

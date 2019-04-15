@@ -20,10 +20,8 @@ namespace FaceDetector{
     void SubNodeThread::run(){
         mFinishNaviSub = mNh.subscribe("finish_navi",2,&SubNodeThread::recievedFinishedNavi,this);
         while(true){
-            ROS_INFO("CHET!!!!!!!!!!!!");
             ros::spin();
-        }
-        //ROS_INFO("Thread of SubNode is working!");
+        }//end while
     }//run
 
     void SubNodeThread::recievedFinishedNavi(const std_msgs::Bool::ConstPtr& msg){

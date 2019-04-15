@@ -52,7 +52,7 @@ Item {
                 width: hotel_list_btn.width*4/20
                 height:list_penel.height
                 opacity: 0;
-            }
+            }//Rectangle
 
             Rectangle{
                 id:list_penel;
@@ -90,8 +90,8 @@ Item {
                     }//GuideMenuBtn
                 }//Column
             }//Rectangle
+        }//Row
 
-        }//Rectangle
         GuideMenuBtn{
             txt:"Toilet"
             img:"img/toilet.png"
@@ -142,6 +142,7 @@ Item {
         to:140
         running: false;
     }//PropertyAnimation::open_list
+
     PropertyAnimation {
         id:close_list
         targets: list_penel
